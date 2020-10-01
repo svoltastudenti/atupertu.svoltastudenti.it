@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: svoltastudenti/atupertu
+  repo: svoltastudenti/atupertu.svoltastudenti.it
   accept_roles: #optional - accepts all users if left out
     - admin
     - editor
