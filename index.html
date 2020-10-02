@@ -178,6 +178,13 @@ layout: default
             left: 70vw;
         }
 
+        .logo {
+            height: 70px;
+            position: absolute;
+            left: 40vw;
+            top: 50vh;
+        }
+
         @media (orientation: portrait) {
           nav {
               display: none;
@@ -224,6 +231,7 @@ layout: default
                 <video src="http://videoatupertu.svoltastudenti.it/{{ post.sku }}.mp4"></video>
             </section>-->
 
+            <img class="logo" data-animtarget="{{ post.sku }}" src="{{ post.logo }}" alt="logo.png">
             <h1 data-animtarget="{{ post.sku }}">{{ post.title }}</h1>
             <h2 data-animtarget="{{ post.sku }}">{{ post.slogan }}</h2>
             <h3 data-animtarget="{{ post.sku }}">{{ post.type }}</h3>
