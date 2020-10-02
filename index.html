@@ -310,14 +310,14 @@ layout: default
     </header>
     <nav>
         <ul>
-            {% for post in site.categories.associations %}
+            {% for post in site.categories.associations | sort "order" %}
                 <li><a data-animtarget="{{ post.sku }}" href="#{{ post.sku }}">{{ post.title }}</a></li>
             {% endfor %}
         </ul>
     </nav>
 
     <main>
-        {% for post in site.categories.associations %}
+        {% for post in site.categories.associations | sort "order" %}
             <!--<section id="{{ post.sku }}" class="animTrigger" data-animId="{{ post.sku }}">
                 <h1 data-animtarget="{{ post.sku }}">{{ post.title }}</h1>
                 <img src="{{ post.cover }}" alt="{{ post.title }}">
