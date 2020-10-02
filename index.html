@@ -210,58 +210,58 @@ layout: default
     </style>
     <!-- Cookies and analytics -->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZMEK66VK8"></script> -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZMEK66VK8"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZMEK66VK8"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-3ZMEK66VK8');
-    </script>
-    <!-- <script>
+    </script> -->
+    <script>
         // Initialize the data layer for Google Tag Manager (this should mandatorily be done before the Cookie Solution is loaded)
         window.dataLayer = window.dataLayer || [];
         function gtag() {
             console.log(dataLayer);
             dataLayer.push(arguments);
         }
-        // // Default consent mode is "denied" for both ads and analytics, but delay for 2 seconds until the Cookie Solution is loaded
-        // gtag("consent", "default", {
-        //     ad_storage: "denied",
-        //     analytics_storage: "denied",
-        //     wait_for_update: 2000 // milliseconds
-        // });
-        // // Further redact your ads data (optional)
-        // gtag("set", "ads_data_redaction", true);
+
+        gtag('set', 'ads_data_redaction', true);
 
         gtag('js', new Date());
         gtag('config', 'G-3ZMEK66VK8');
+
         // // Google Tag Manager
-        // (function(w, d, s, l, i) {
-        //     console.log('in');
-        //     w[l] = w[l] || [];
-        //     w[l].push({
-        //         'gtm.start': new Date().getTime(),
-        //         event: 'gtm.js'
-        //     });
-        //     var f = d.getElementsByTagName(s)[0],
-        //         j = d.createElement(s),
-        //         dl = l != 'dataLayer' ? '&l=' + l : '';
-        //     j.async = true;
-        //     j.src =
-        //         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        //     f.parentNode.insertBefore(j, f);
-        // })(window, document, 'script', 'dataLayer', 'G-3ZMEK66VK8');
+        // (function(id) {
+
+        // })('G-3ZMEK66VK8');
     </script>
     <script>
         var consentUpdated = false;
         // Update the existing consent
         function updateConsent(ad_storage, analytics_storage) {
-            gtag("consent", "update", {
-                ad_storage: ad_storage ? "granted" : "denied",
-                analytics_storage: analytics_storage ? "granted" : "denied"
-            });
-            consentUpdated = true;
+            if (analytics_storage){
+                // Load Google Analytics
+                gtag({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                
+                gtag('consent', 'update', {
+                    ad_storage: ad_storage ? 'granted' : 'denied',
+                    analytics_storage: analytics_storage ? 'granted' : 'denied'
+                });
+
+                let id = 'G-3ZMEK66VK8';
+                let j = document.createElement("script");
+                j.async = true;
+                j.src = `https://www.googletagmanager.com/gtm.js?id=${id}`;
+                document.head.appendChild(script);
+                consentUpdated = true;
+            }
+            else {
+                console.log('waiting');
+            }
         }
     </script>
     <script>    
@@ -295,7 +295,7 @@ layout: default
             }
         };
     </script>
-    <script src="https://cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script> -->
+    <script src="https://cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
     <!-- End cookies -->
 </head>
 <body>
