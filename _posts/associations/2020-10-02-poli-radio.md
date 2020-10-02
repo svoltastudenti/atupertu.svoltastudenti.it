@@ -2,6 +2,7 @@
 layout: associations
 category: associations
 title: POLI.RADIO
+logo: /assets/img/uploads/image00001.jpeg
 sku: poliradio
 slogan: NOT AM, NOT FM
 type: Associazione
