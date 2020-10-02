@@ -20,7 +20,8 @@ collections:
       - {label: "SKU", name: "sku", widget: "string"}
       - {label: "Slogan", name: "slogan", widget: "string"}
       - {label: "Tipo", name: "type", widget: "select", options: ["Associazione", "Lista di Rappresentanza", "Opportunità extradidattiche", "Attività Culturali", "Community e vita associativa"], multiple: false}
-      - {label: "Descrizione", name: "body", widget: "markdown"}
+      - {label: "Descrizione", name: "body", widget: "hidden", default: "useless"}
+      - {label: "Prova", name: "description", widget: "markdown"}
       - {label: "Cover", name: "cover", widget: "image", required: true}
       - {label: "Pubblicato", name: "published", widget: "hidden", default: true}
       - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
