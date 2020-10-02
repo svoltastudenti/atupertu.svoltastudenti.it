@@ -99,26 +99,22 @@ layout: default
             opacity: 1;
         }
 
+        nav ul li a:hover {
+            font-size: 2.5vh;
+            font-weight: 700;
+        }
+
         main {
             scroll-snap-type: y mandatory;
             overflow-y: scroll;
             position: fixed;
-            top: 0;
-            left: 0;
             bottom: 0;
             right: 0;
             scroll-behavior: smooth;
         }
 
-        section {
-            position: relative;
-            height: 100vh;
-            width: 100%;
-            scroll-snap-align: center;
-            background-color: black;
-        }
-
-        section img {
+        main img {
+            position: fixed;
             height: 100%;
             width: 100%;
             background-origin: padding-box;
@@ -126,6 +122,13 @@ layout: default
             background-repeat: no-repeat;
             background-size: cover;
             filter: brightness(50%);
+        }
+
+        section {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            scroll-snap-align: center;
         }
 
         section h1,
