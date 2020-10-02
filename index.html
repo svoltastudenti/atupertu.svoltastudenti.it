@@ -15,6 +15,9 @@ layout: default
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+        html, body {
+            background-color: red;
+        }
         h1,
         h2,
         h3,
@@ -103,7 +106,7 @@ layout: default
             font-weight: 700;
         }
 
-        main {
+        section {
             scroll-snap-type: y mandatory;
             overflow-y: scroll;
             position: fixed;
@@ -112,7 +115,7 @@ layout: default
             scroll-behavior: smooth;
         }
 
-        main img {
+        section img {
             position: fixed;
             height: 100%;
             width: 100%;
@@ -123,17 +126,17 @@ layout: default
             filter: brightness(50%);
         }
 
-        main {
+        section {
             position: relative;
             height: 100vh;
             width: 100%;
             scroll-snap-align: center;
         }
 
-        main h1,
-        main h2,
-        main h3,
-        main p {
+        section h1,
+        section h2,
+        section h3,
+        section p {
             top: 10vh;
             left: 30%;
             position: absolute;
@@ -143,37 +146,37 @@ layout: default
             transition: opacity 1s;
         }
 
-        main h1.animActive,
-        main h2.animActive,
-        main h3.animActive,
-        main p.animActive {
+        section h1.animActive,
+        section h2.animActive,
+        section h3.animActive,
+        section p.animActive {
             opacity: 1;
         }
 
-        main h1 {
+        section h1 {
             font-weight: 700;
             font-size: 3vw;
         }
 
-        main h2 {
+        section h2 {
             margin-top: 140px;
             font-weight: 400;
             font-size: 1.5vw;
         }
 
-        main h3 {
+        section h3 {
             margin-top: 170px;
             font-weight: 400;
             font-size: 1.2vw;
         }
 
-        main p {
+        section p {
             margin-top: 200px;
             width: 25vw;
             font-size: 17px;
         }
 
-        main video {
+        section video {
             position: absolute;
             width: 20vw;
             top: 35vh;
@@ -192,19 +195,19 @@ layout: default
               display: none;
           }
 
-          main h1,
-          main h2,
-          main h3,
-          main p {
+          section h1,
+          section h2,
+          section h3,
+          section p {
               top: 15vh;
               left: 10%;
           }
 
-          main h1 {
+          section h1 {
               font-size: 5vw;
           }
 
-          main h2 {
+          section h2 {
               margin-top: 100px;
               font-size: 3vw;
           }
@@ -305,7 +308,6 @@ layout: default
     <header>
         <img src="/assets/img/logo.png" alt="TuxTu-logo">
     </header>
-
     <nav>
         <ul>
             {% for post in site.categories.associations %}
@@ -321,17 +323,17 @@ layout: default
                 <img src="{{ post.cover }}" alt="{{ post.title }}">
                 <video src="http://videoatupertu.svoltastudenti.it/{{ post.sku }}.mp4"></video>
             </section>-->
-
-            <img class="logo" data-animtarget="{{ post.sku }}" src="{{ post.logo }}" alt="logo.png">
-            <h1 data-animtarget="{{ post.sku }}">{{ post.title }}</h1>
-            <h2 data-animtarget="{{ post.sku }}">{{ post.slogan }}</h2>
-            <h3 data-animtarget="{{ post.sku }}">{{ post.type }}</h3>
-            <p data-animtarget="{{ post.sku }}">{{ post.body }}</p>
-            <video controls poster="{{ post.cover }}">
-                <source src="https://videoatupertu.svoltastudenti.it/{{ post.sku }}.mp4" type="video/mp4">
-                Your browser does not support HTML video.
-            </video>
-
+            <section id="{{ post.sku }}" class="animTrigger" data-animId="{{ post.sku }}">
+                <img class="logo" data-animtarget="{{ post.sku }}" src="{{ post.logo }}" alt="logo.png">
+                <h1 data-animtarget="{{ post.sku }}">{{ post.title }}</h1>
+                <h2 data-animtarget="{{ post.sku }}">{{ post.slogan }}</h2>
+                <h3 data-animtarget="{{ post.sku }}">{{ post.type }}</h3>
+                <p data-animtarget="{{ post.sku }}">{{ post.body }}</p>
+                <video controls poster="{{ post.cover }}">
+                    <source src="https://videoatupertu.svoltastudenti.it/{{ post.sku }}.mp4" type="video/mp4">
+                    Your browser does not support HTML video.
+                </video>
+            </section>
         {% endfor %}
     </main>
 
