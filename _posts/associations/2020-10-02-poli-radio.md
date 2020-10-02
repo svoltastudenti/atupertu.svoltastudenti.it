@@ -9,6 +9,7 @@ type: Associazione
 cover: /assets/img/uploads/image00001.jpeg
 published: true
 date: 2020-10-02T09:54:46.722Z
+order: 1
 ---
 POLI.RADIO è la radio ufficiale degli studenti del Politecnico di Milano: produciamo diversi tipi di contenuti, tra cui programmi, podcast, interviste, articoli, video, e molto altro.
 
