@@ -222,8 +222,8 @@ layout: default
         // Initialize the data layer for Google Tag Manager (this should mandatorily be done before the Cookie Solution is loaded)
         window.dataLayer = window.dataLayer || [];
         function gtag() {
-            console.log(dataLayer);
-            dataLayer.push(arguments);
+            console.log(window.dataLayer);
+            window.dataLayer.push(arguments);
         }
 
         gtag('set', 'ads_data_redaction', true);
