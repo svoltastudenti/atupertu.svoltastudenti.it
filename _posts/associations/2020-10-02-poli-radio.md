@@ -6,6 +6,7 @@ logo: /assets/img/uploads/image00001.jpeg
 sku: poliradio
 slogan: NOT AM, NOT FM
 type: Associazione
+description: ahahahahahahahahaha
 cover: /assets/img/uploads/image00001.jpeg
 published: true
 date: 2020-10-02T09:54:46.722Z
