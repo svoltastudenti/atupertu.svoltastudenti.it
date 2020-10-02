@@ -217,14 +217,14 @@ layout: default
             console.log(dataLayer);
             dataLayer.push(arguments);
         }
-        // Default consent mode is "denied" for both ads and analytics, but delay for 2 seconds until the Cookie Solution is loaded
-        gtag("consent", "default", {
-            ad_storage: "denied",
-            analytics_storage: "denied",
-            wait_for_update: 2000 // milliseconds
-        });
-        // Further redact your ads data (optional)
-        gtag("set", "ads_data_redaction", true);
+        // // Default consent mode is "denied" for both ads and analytics, but delay for 2 seconds until the Cookie Solution is loaded
+        // gtag("consent", "default", {
+        //     ad_storage: "denied",
+        //     analytics_storage: "denied",
+        //     wait_for_update: 2000 // milliseconds
+        // });
+        // // Further redact your ads data (optional)
+        // gtag("set", "ads_data_redaction", true);
 
         gtag('js', new Date());
         gtag('config', 'G-3ZMEK66VK8');
