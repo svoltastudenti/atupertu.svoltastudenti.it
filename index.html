@@ -240,7 +240,7 @@ layout: default
         var consentUpdated = false;
         // Update the existing consent
         function updateConsent(ad_storage, analytics_storage) {
-            if (analytics_storage){
+            if (analytics_storage || ad_storage){
                 // Load Google Analytics
                 gtag({
                     'gtm.start': new Date().getTime(),
