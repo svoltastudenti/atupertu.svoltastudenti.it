@@ -15,7 +15,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "associations"}
       - {label: "Categoria", name: "category", widget: "hidden", default: "associations"}
-      - {label: "Titolo", name: "title", widget: "string"}
+      - {label: "Titolofffff", name: "title", widget: "string"}
       - {label: "Logo", name: "logo", widget: "image", required: true}
       - {label: "SKU", name: "sku", widget: "string"}
       - {label: "Slogan", name: "slogan", widget: "string"}
