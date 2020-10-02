@@ -6,6 +6,16 @@ logo: /assets/img/uploads/screenshot-2020-10-02-at-22.22.36.png
 sku: tdb
 slogan: Stay tuned stay Biglia
 type: Attività Culturali
+description: |-
+  jhgkuyygguuhiuh
+
+
+
+  ];
+
+  ]\[];]]
+
+  ][[[
 cover: /assets/img/uploads/copia-di-imba_005.jpg
 published: true
 date: 2020-10-01T20:20:00.000Z
