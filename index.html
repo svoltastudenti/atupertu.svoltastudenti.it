@@ -256,7 +256,8 @@ layout: default
                 let j = document.createElement("script");
                 j.async = true;
                 j.src = `https://www.googletagmanager.com/gtm.js?id=${id}`;
-                document.head.appendChild(script);
+                console.log("appending");
+                document.head.appendChild(j);
                 consentUpdated = true;
             }
             else {
