@@ -312,7 +312,7 @@ layout: default
         <ul>
             {% assign list = site.categories.associations | sort "order" %}
             {% for post in list %}
-                <li><a data-animtarget="{{ post.sku }}" href="#{{ post.sku }}">{{ post.title }}</a></li>
+            <li><a data-animtarget="{{ post.sku }}" href="#{{ post.sku }}">{{ post.title }}</a></li>
             {% endfor %}
         </ul>
     </nav>
@@ -320,22 +320,17 @@ layout: default
     <main>
         <img src="/assets/img/uploads/immagine-2020-09-21-222201.png" alt="">
         {% for post in list %}
-        <!--<section id="{{ post.sku }}" class="animTrigger" data-animId="{{ post.sku }}">
-                <h1 data-animtarget="{{ post.sku }}">{{ post.title }}</h1>
-                <img src="{{ post.cover }}" alt="{{ post.title }}">
-                <video src="http://videoatupertu.svoltastudenti.it/{{ post.sku }}.mp4"></video>
-            </section>-->
-            <section id="{{ post.sku }}" class="animTrigger" data-animId="{{ post.sku }}">
-                <img class="logo" data-animtarget="{{ post.sku }}" src="{{ post.logo }}" alt="logo.png">
-                <h1 data-animtarget="{{ post.sku }}">{{ post.title }}</h1>
-                <h2 data-animtarget="{{ post.sku }}">{{ post.slogan }}</h2>
-                <h3 data-animtarget="{{ post.sku }}">{{ post.type }}</h3>
-                <p data-animtarget="{{ post.sku }}">{{ post.description }}</p>
-                <video controls poster="{{ post.cover }}">
-                    <source src="https://videoatupertu.svoltastudenti.it/{{ post.sku }}.mp4" type="video/mp4">
-                    Your browser does not support HTML video.
-                </video>
-            </section>
+        <section id="{{ post.sku }}" class="animTrigger" data-animId="{{ post.sku }}">
+            <img class="logo" data-animtarget="{{ post.sku }}" src="{{ post.logo }}" alt="logo.png">
+            <h1 data-animtarget="{{ post.sku }}">{{ post.title }}</h1>
+            <h2 data-animtarget="{{ post.sku }}">{{ post.slogan }}</h2>
+            <h3 data-animtarget="{{ post.sku }}">{{ post.type }}</h3>
+            <p data-animtarget="{{ post.sku }}">{{ post.description }}</p>
+            <video controls poster="{{ post.cover }}">
+                <source src="https://videoatupertu.svoltastudenti.it/{{ post.sku }}.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+        </section>
         {% endfor %}
     </main>
 
