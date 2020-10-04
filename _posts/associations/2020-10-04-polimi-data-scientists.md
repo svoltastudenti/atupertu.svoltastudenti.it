@@ -1,7 +1,7 @@
 ---
 layout: associations
 category: associations
-title: PoliMi Data Scientists
+title: Polimi Data Scientists
 sku: datascientist
 slogan: The Data Scientists’ community at PoliMi.
 type: Community e vita associativa
