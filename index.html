@@ -36,7 +36,6 @@ layout: default
         header,
         main,
         section,
-        nav,
         ul {
             top: 0;
             left: 0;
@@ -60,12 +59,14 @@ layout: default
         }
 
         nav {
-            background: green;
+            top: 20vh;
+            left: 70vw;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.5);
             position: fixed;
             height: 60vh;
-            width: 300px;
-            margin-left: 5vw;
-            margin-top: 20vh;
+            width: 25vw;
             z-index: 2;
             border-radius: 20px;
 
@@ -131,85 +132,146 @@ layout: default
             scroll-snap-align: center;
         }
 
-        section h1,
-        section h2,
-        section h3,
-        section p {
-            top: 10vh;
-            left: 30%;
+        section article {
+            top: 20vh;
+            left: 35vw;
+            bottom: 20vh;
+            width: 30vw;
             position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        section article h1,
+        section article h2,
+        section article h3,
+        section article p {
+            margin: 0;
+            position: relative;
             color: white;
             opacity: 0;
             z-index: 2;
             transition: opacity 1s;
         }
 
-        section h1.animActive,
-        section h2.animActive,
-        section h3.animActive,
-        section p.animActive {
+        section article h1.animActive,
+        section article h2.animActive,
+        section article h3.animActive,
+        section article p.animActive {
             opacity: 1;
         }
 
-        section h1 {
+        section article h1 {
             font-weight: 700;
             font-size: 3vw;
         }
 
-        section h2 {
-            margin-top: 140px;
+        section article h2 {
+            margin-top: 0.5vh;
             font-weight: 400;
             font-size: 1.5vw;
         }
 
-        section h3 {
-            margin-top: 170px;
+        section article h3 {
+            margin-top: 0.5vh;
             font-weight: 400;
             font-size: 1.2vw;
         }
 
-        section p {
-            margin-top: 200px;
-            width: 25vw;
-            font-size: 17px;
+        section article p {
+            text-align: justify;
+            margin-top: 2vh;
+            font-size: 1em;
         }
 
         section video {
             position: absolute;
-            width: 20vw;
-            top: 35vh;
-            left: 70vw;
+            width: 25vw;
+            top: 37vh;
+            left: 5vw;
         }
 
         .logo {
-            height: 70px;
+            height: 10vh;
+            width: auto;
             position: absolute;
-            left: 40vw;
-            top: 50vh;
+            right: 70vw;
+            top: 22vh;
+            z-index: 3;
         }
 
+        @media screen and (max-width: 800px),
+        (max-aspect-ratio: 5/3) {
 
-        @media (orientation: portrait) {
             nav {
                 display: none;
             }
 
-            section h1,
-            section h2,
-            section h3,
-            section p {
+            section article {
+                top: 20vh;
+                left: 50vw;
+                width: 40vw;
+            }
+
+            section article h1 {
+                font-size: 2em;
+            }
+
+            section article h2 {
+                font-size: 1.5em;
+            }
+
+            section article p {
+                margin-top: 1vh;
+                font-size: 14px;
+            }
+
+            section video {
+                width: 40vw;
+                top: 32vh;
+                left: 5vw;
+            }
+
+            .logo {
+                right: 55vw;
+                top: 20vh;
+            }
+        }
+
+        @media (orientation: portrait) {
+
+            section article {
+                top: 47vh;
+                left: 5vw;
+                width: 90vw;
+            }
+
+            section article h1,
+            section article h2,
+            section article h3 {
+                left: 20vw;
+            }
+
+            section article p {
+                font-size: 13px;
+            }
+
+            section video {
+                width: auto;
+                height: 25vh;
                 top: 15vh;
-                left: 10%;
+                left: 50vw;
+                transform: translate(-50%, 0);
             }
 
-            section h1 {
-                font-size: 5vw;
+            .logo {
+                width: 15vw;
+                height: auto;
+                left: 5vw;
+                top: 50vh;
             }
 
-            section h2 {
-                margin-top: 100px;
-                font-size: 3vw;
-            }
         }
     </style>
     <!-- Cookies and analytics -->
@@ -322,10 +384,12 @@ layout: default
         {% for post in list %}
         <section id="{{ post.sku }}" class="animTrigger" data-animId="{{ post.sku }}">
             <img class="logo" data-animtarget="{{ post.sku }}" src="{{ post.logo }}" alt="logo.png">
-            <h1 data-animtarget="{{ post.sku }}">{{ post.title }}</h1>
-            <h2 data-animtarget="{{ post.sku }}">{{ post.slogan }}</h2>
-            <h3 data-animtarget="{{ post.sku }}">{{ post.type }}</h3>
-            <p data-animtarget="{{ post.sku }}">{{ post.description }}</p>
+            <article>
+                <h1 data-animtarget="{{ post.sku }}">{{ post.title }}</h1>
+                <h2 data-animtarget="{{ post.sku }}">{{ post.slogan }}</h2>
+                <h3 data-animtarget="{{ post.sku }}">{{ post.type }}</h3>
+                <p data-animtarget="{{ post.sku }}">{{ post.description }}</p>
+            </article>
             <video controls poster="{{ post.cover }}">
                 <source src="https://videoatupertu.svoltastudenti.it/{{ post.sku }}.mp4" type="video/mp4">
                 Your browser does not support HTML video.
