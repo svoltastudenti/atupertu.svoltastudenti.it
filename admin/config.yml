@@ -16,7 +16,6 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "associations"}
       - {label: "Categoria", name: "category", widget: "hidden", default: "associations"}
       - {label: "Titolo", name: "title", widget: "string"}
-      - {label: "Logo", name: "logo", widget: "image", required: true}
       - {label: "SKU", name: "sku", widget: "string"}
       - {label: "Slogan", name: "slogan", widget: "string"}
       - {label: "Tipo", name: "type", widget: "select", options: ["Associazione", "Lista di Rappresentanza", "Opportunità extradidattiche", "Attività Culturali", "Community e vita associativa"], multiple: false}
