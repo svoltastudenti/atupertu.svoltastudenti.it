@@ -2,7 +2,6 @@
 layout: associations
 category: associations
 title: SIT Polimi
-logo: /assets/img/uploads/logo-sitpolimi.png
 sku: sit
 slogan: Social Innovation Team
 type: Community e vita associativa

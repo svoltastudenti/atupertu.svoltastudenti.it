@@ -2,7 +2,6 @@
 layout: associations
 category: associations
 title: Teatro delle Biglie
-logo: /assets/img/uploads/screenshot-2020-10-02-at-22.22.36.png
 sku: tdb
 slogan: Stay tuned stay Biglia
 type: Attività Culturali

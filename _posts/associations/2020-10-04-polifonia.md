@@ -2,7 +2,6 @@
 layout: associations
 category: associations
 title: Polifonia
-logo: /assets/img/uploads/tavola-disegno-2.png
 sku: polifonia
 slogan: L'associazione musicale del Politecnico di Milano
 type: Attività Culturali

@@ -2,7 +2,6 @@
 layout: associations
 category: associations
 title: Svoltastudenti
-logo: /assets/img/uploads/4cf9b6749ecb17751890d6c5b4977cf8.jpeg
 sku: Svoltastudenti
 slogan: ciaociao
 type: Associazione

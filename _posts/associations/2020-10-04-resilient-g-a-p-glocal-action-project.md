@@ -2,7 +2,6 @@
 layout: associations
 category: associations
 title: Resilient G.A.P. - Glocal Action Project
-logo: /assets/img/uploads/logo-ridotto_esteso-è-lo-stesso-.png
 sku: resilientgap
 slogan: Pensare globale, agire locale!
 type: Attività Culturali

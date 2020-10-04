@@ -2,7 +2,6 @@
 layout: associations
 category: associations
 title: PoliMi Data Scientists
-logo: /assets/img/uploads/poli-data-scientists-esteso.png
 sku: datascientist
 slogan: The Data Scientists’ community at PoliMi.
 type: Community e vita associativa
