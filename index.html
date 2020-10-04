@@ -368,7 +368,7 @@ layout: default
 
 <body>
     <header>
-        <img id="sfondo" src="/assets/img/logo.png" alt="TuxTu-logo">
+        <img src="/assets/img/logo.png" alt="TuxTu-logo">
     </header>
     <nav>
         <ul>
@@ -380,7 +380,7 @@ layout: default
     </nav>
 
     <main>
-        <img src="/assets/img/uploads/immagine-2020-09-21-222201.png" alt="">
+        <img id="sfondo" src="/assets/img/sfondo.png" alt="">
         {% for post in list %}
         <section id="{{ post.sku }}" class="animTrigger" data-animId="{{ post.sku }}">
             <img class="logo" data-animtarget="{{ post.sku }}" src="https://videoatupertu.svoltastudenti.it/logo/{{ post.sku }}.png" alt="Logo {{ post.title }}">
