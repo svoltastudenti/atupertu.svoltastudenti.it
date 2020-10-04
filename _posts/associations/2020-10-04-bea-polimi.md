@@ -23,6 +23,8 @@ description: >-
   Ti aspettiamo al nostro prossimo evento ;)
 
 
+
+
   [ENGLISH VERSION]
 
   BEA, Biomedical Engineering Association, is the Association of Biomedical Engineering students of Politecnico di Milano. Our goal is to create a strong network among students, giving them the opportunity to share information, ideas and their experiences. Just to give you a hint…
