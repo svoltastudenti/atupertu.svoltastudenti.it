@@ -317,7 +317,6 @@ layout: default
                     var s = document.createElement("script");
                     s.type = "text/javascript";
                     s.src = "https://www.googletagmanager.com/gtag/js?id=G-3ZMEK66VK8";
-                    s.onload = _ => alert('hi');
                     document.head.append(s);
                     window.googleAnalyticsLoaded = true;
                 }
@@ -428,6 +427,11 @@ layout: default
                     targets.forEach(item => {
                         if (entry.intersectionRatio > 0.5) {
                             item.classList.add('animActive');
+
+                            gtag('event', 'screen_view', {
+                                // 'app_name': 'myAppName',
+                                'screen_name' : `associations/${entry.target.dataset.animid}`
+                            });
                         } else if (entry.intersectionRatio < 0.95) {
                             item.classList.remove('animActive');
                         }
@@ -435,10 +439,6 @@ layout: default
                     // gtag('event', 'view_item', {
                     //     event_label: entry.target.dataset.animid
                     // });
-                    gtag('event', 'screen_view', {
-                        // 'app_name': 'myAppName',
-                        'screen_name' : `associations/${entry.target.dataset.animid}`
-                    });
                 }
             });
         }, options);
