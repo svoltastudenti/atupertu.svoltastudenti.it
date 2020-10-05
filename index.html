@@ -429,7 +429,7 @@ layout: default
                         if (entry.intersectionRatio > 0.5) {
                             let newScreen = `associations/${entry.target.dataset.animid}`;
                             item.classList.add('animActive');
-                            
+                            console.log(window.currentScreen, newScreen);
                             if (window.currentScreen !== newScreen){
                                 gtag('event', 'screen_view', {
                                     'screen_name' : newScreen
@@ -438,6 +438,7 @@ layout: default
                             else {
                                 console.log(`Skip signal ${newScreen}`);
                             }
+                            window.currentScreen = newScreen;
                         } else if (entry.intersectionRatio < 0.95) {
                             item.classList.remove('animActive');
                         }
