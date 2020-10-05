@@ -1,5 +1,9 @@
 ---
 layout: associations
+published: true
+date: 2020-10-04T16:27:59.587Z
+order: 19
+cover: /assets/img/uploads/copertina-1.png
 category: associations
 title: SIT Polimi
 sku: sit
@@ -14,9 +18,5 @@ description: >-
   Tra gli scopi principali, quelli della sensibilizzazione e del sostegno a imprenditori e progetti di innovazione sociale.
 
   We are ready for revolution!
-published: true
-date: 2020-10-04T16:27:59.587Z
-order: 0
-cover: /assets/img/uploads/copertina-1.png
 ---
 useless
