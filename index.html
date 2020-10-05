@@ -396,7 +396,7 @@ layout: default
                 <h3 data-animtarget="{{ post.sku }}">{{ post.type }}</h3>
                 <p data-animtarget="{{ post.sku }}">{{ post.description }}</p>
             </article>
-            <video controls poster="https://videoatupertu.svoltastudenti.it/cover/{{ post.sku }}.jpg" onclick="">
+            <video controls poster="https://videoatupertu.svoltastudenti.it/cover/{{ post.sku }}.jpg" data-id="{{ post.sku }}">
                 <source src="https://videoatupertu.svoltastudenti.it/video/{{ post.sku }}.mp4" type="video/mp4">
                 Your browser does not support HTML video.
             </video>
@@ -456,7 +456,7 @@ layout: default
         function sendVideoTrigger(e, type){
             e.target.dataset.id
             gtag('event', 'view_item', {
-                event_label: `associations/${entry.target.dataset.animid}`,
+                event_label: `associations/${e.target.dataset.animid}`,
                 event_category: `video_${type}`,
             });
         }
