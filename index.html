@@ -426,7 +426,7 @@ layout: default
                         `*[data-animtarget="${entry.target.dataset.animid}"]`);
                     targets.forEach(item => {
                         if (entry.intersectionRatio > 0.5) {
-                            if (!entry.classList.contains('animActive')){
+                            if (!item.classList.contains('animActive')){
                                 item.classList.add('animActive');
 
                                 gtag('event', 'screen_view', {
