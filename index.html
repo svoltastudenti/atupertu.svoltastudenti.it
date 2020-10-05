@@ -256,10 +256,11 @@ layout: default
             }
         }
 
-        @media (orientation: portrait), (max-width: 800px) {
+        @media (orientation: portrait),
+        (max-width: 800px) {
 
             section article {
-                top: 44vh;
+                top: 40vh;
                 left: 5vw;
                 width: 90vw;
             }
@@ -290,9 +291,8 @@ layout: default
             }
 
             section video {
-                width: auto;
-                height: 25vh;
-                top: 15vh;
+                width: 250px;
+                top: 13vh;
                 left: 50vw;
                 transform: translate(-50%, 0);
             }
@@ -301,11 +301,10 @@ layout: default
                 width: 60px;
                 height: 60px;
                 left: 20vw;
-                top: 49vh;
+                top: 45vh;
             }
 
         }
-
     </style>
     <!-- Cookies and analytics -->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZMEK66VK8"></script> -->
@@ -407,7 +406,8 @@ layout: default
         <ul>
             {% assign list = site.categories.associations | sort "order" %}
             {% for post in list %}
-            <li data-animtarget="{{ post.sku }}"><a data-animtarget="{{ post.sku }}" href="#{{ post.sku }}">{{ post.title }}</a></li>
+            <li data-animtarget="{{ post.sku }}"><a data-animtarget="{{ post.sku }}"
+                    href="#{{ post.sku }}">{{ post.title }}</a></li>
             {% endfor %}
         </ul>
     </nav>
@@ -416,7 +416,8 @@ layout: default
         <img id="sfondo" src="/assets/img/sfondo.png" alt="">
         {% for post in list %}
         <section id="{{ post.sku }}" class="animTrigger" data-animId="{{ post.sku }}">
-            <img class="logo" data-animtarget="{{ post.sku }}" src="https://videoatupertu.svoltastudenti.it/logo/{{ post.sku }}.png" alt="Logo {{ post.title }}">
+            <img class="logo" data-animtarget="{{ post.sku }}"
+                src="https://videoatupertu.svoltastudenti.it/logo/{{ post.sku }}.png" alt="Logo {{ post.title }}">
             <article>
                 <h1 data-animtarget="{{ post.sku }}">{{ post.title }}</h1>
                 <h2 data-animtarget="{{ post.sku }}">{{ post.slogan }}</h2>
