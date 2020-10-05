@@ -256,7 +256,7 @@ layout: default
             }
         }
 
-        @media (orientation: portrait) {
+        @media (orientation: portrait), (max-width: 800px) {
 
             section article {
                 top: 47vh;
@@ -269,6 +269,18 @@ layout: default
             section article h3 {
                 width: 70vw;
                 left: 20vw;
+            }
+
+            section article h1 {
+                font-size: 1.5em;
+            }
+
+            section article h2 {
+                font-size: 1em;
+            }
+
+            section article h3 {
+                font-size: 15px;
             }
 
             section article p {
@@ -291,6 +303,7 @@ layout: default
             }
 
         }
+
     </style>
     <!-- Cookies and analytics -->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZMEK66VK8"></script> -->
