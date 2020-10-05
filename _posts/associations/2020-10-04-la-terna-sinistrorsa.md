@@ -2,6 +2,7 @@
 layout: associations
 category: associations
 title: La Terna Sinistrorsa
+logo: /assets/img/uploads/loto-esteso-terna.png
 sku: terna
 slogan: Il sistema di riferimento del Politecnico
 type: Lista di Rappresentanza
@@ -14,8 +15,9 @@ description: >-
   Siamo studentesse e studenti certi che la cultura possa essere un efficace strumento di azione sociale e collettiva contro le ingiustizie, azione alla cui base vi sono gli ideali di uguaglianza, libertà e democrazia.  
 
   La nostra idea condivisa di università è: diritto allo studio, qualità della didattica e vita universitaria. Ed è con il rafforzamento di questi tre concetti che vogliamo continuare a rappresentare gli studenti.
+cover: /assets/img/uploads/artboard-1sfondo_4.png
 published: true
 date: 2020-10-04T21:39:07.148Z
-order: 0
+order: 2
 ---
 useless
