@@ -20,8 +20,9 @@ description: >-
   mobilità e l’internazionalizzazione, ci battiamo costantemente per il merito,
   per le pari opportunità e per una didattica in continuo miglioramento. Infine,
   crediamo nel #beyondlessons, quindi alimentiamo le vostre passioni creando una
-  community partecipativa con eventi sportivi e di student life.<\p>
+  community partecipativa con eventi sportivi e di student life.
 
-  <p> Svoltastudenti is a non-profit, non-partisan and a-religious students’ union. Meaning two coexisting souls: one associative the other representative. Our mission is to create opportunities, spread culture and implement projects. Our values are internationalization, teaching & innovation, participation, sport & student life.<\p>
+
+  <p> Svoltastudenti is a non-profit, non-partisan and a-religious students’ union. Meaning two coexisting souls: one associative the other representative. Our mission is to create opportunities, spread culture and implement projects. Our values are internationalization, teaching & innovation, participation, sport & student life.
 ---
 derbghnjhgfdsa
