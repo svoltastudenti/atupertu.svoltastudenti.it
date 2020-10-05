@@ -1,6 +1,10 @@
 ---
 layout: associations
 logo: /assets/img/uploads/risorsa-65.svg
+published: true
+date: 2020-10-05T10:47:28.540Z
+order: 21
+cover: /assets/img/uploads/img_20200929_213840.jpg
 category: associations
 title: PoliSpace
 sku: polispace
@@ -12,9 +16,5 @@ description: PoliSpace è la prima associazione spaziale nella storia del
   aumentando e rifinendo le proprie abilità e di far sì che possano costruire la
   propria rete di conoscenze nel settore spaziale, attraverso seminari e visite
   in aziende.
-published: true
-date: 2020-10-05T10:47:28.540Z
-order: 2
-cover: /assets/img/uploads/img_20200929_213840.jpg
 ---
 useless
