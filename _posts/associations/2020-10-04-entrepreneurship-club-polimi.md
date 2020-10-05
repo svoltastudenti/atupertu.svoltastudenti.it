@@ -17,6 +17,6 @@ description: >-
   [ENG] We are an association whose goal is to create a multidisciplinary network among Politecnico students and to give the an entrepreneurial mindset. We teach entrepreneurial topics and we invite entrepreneurs and the main player of the Italian startup ecosystem to share with us their experience.
 published: true
 date: 2020-10-04T21:20:49.717Z
-order: 0
+order: 11
 ---
 useless
