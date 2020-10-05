@@ -13,6 +13,7 @@ layout: default
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
         h1,
@@ -59,17 +60,17 @@ layout: default
         }
 
         nav {
-            top: 20vh;
+            top: 50vh;
             left: 70vw;
             -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
             background-color: rgba(0, 0, 0, 0.5);
             position: fixed;
-            height: 60vh;
+            height: 70vh;
             width: 25vw;
             z-index: 2;
-            border-radius: 20px;
-
+            border-radius: 30px;
+            transform: translate(0, -50%);
             display: flex;
             flex-direction: column;
         }
@@ -83,11 +84,19 @@ layout: default
             align-items: center;
         }
 
+        nav ul li {
+            margin: 3px;
+            transition: margin 1s;
+        }
+
+        nav ul li.animActive {
+            margin: 10px;
+        }
+
 
         nav ul li a {
-            padding: 7px;
             text-decoration: none;
-            font-size: 2vh;
+            font-size: 1vw;
             font-weight: 400;
             color: white;
             opacity: 0.7;
@@ -95,7 +104,7 @@ layout: default
         }
 
         nav ul li a.animActive {
-            font-size: 2.5vh;
+            font-size: 1.3vw;
             font-weight: 700;
             opacity: 1;
         }
@@ -164,19 +173,20 @@ layout: default
 
         section article h1 {
             font-weight: 700;
-            font-size: 3vw;
+            font-size: 3em;
         }
 
         section article h2 {
-            margin-top: 0.5vh;
+            margin-top: 0.2vh;
             font-weight: 400;
-            font-size: 1.5vw;
+            font-size: 1.2em;
+            font-style: italic;
         }
 
         section article h3 {
-            margin-top: 0.5vh;
+            margin-top: 1vh;
             font-weight: 400;
-            font-size: 1.2vw;
+            font-size: 1em;
         }
 
         section article p {
@@ -188,17 +198,18 @@ layout: default
         section video {
             position: absolute;
             width: 25vw;
-            top: 37vh;
+            top: 35vh;
             left: 5vw;
         }
 
         .logo {
-            height: 10vh;
-            width: auto;
+            height: 100px;
+            width: 100px;
             position: absolute;
-            right: 70vw;
-            top: 22vh;
+            left: 30vw;
+            top: 26.7vh;
             z-index: 3;
+            transform: translate(-100%, -50%);
         }
 
         @media screen and (max-width: 800px),
@@ -219,7 +230,11 @@ layout: default
             }
 
             section article h2 {
-                font-size: 1.5em;
+                font-size: 1.1em;
+            }
+
+            section article h3 {
+                font-size: 0.9em;
             }
 
             section article p {
@@ -234,8 +249,10 @@ layout: default
             }
 
             .logo {
-                right: 55vw;
-                top: 20vh;
+                height: 75px;
+                width: 75px;
+                left: 45vw;
+                top: 25vh;
             }
         }
 
@@ -250,6 +267,7 @@ layout: default
             section article h1,
             section article h2,
             section article h3 {
+                width: 70vw;
                 left: 20vw;
             }
 
@@ -266,10 +284,10 @@ layout: default
             }
 
             .logo {
-                width: 15vw;
-                height: auto;
-                left: 5vw;
-                top: 50vh;
+                width: 60px;
+                height: 60px;
+                left: 20vw;
+                top: 52vh;
             }
 
         }
@@ -374,7 +392,7 @@ layout: default
         <ul>
             {% assign list = site.categories.associations | sort "order" %}
             {% for post in list %}
-            <li><a data-animtarget="{{ post.sku }}" href="#{{ post.sku }}">{{ post.title }}</a></li>
+            <li data-animtarget="{{ post.sku }}"><a data-animtarget="{{ post.sku }}" href="#{{ post.sku }}">{{ post.title }}</a></li>
             {% endfor %}
         </ul>
     </nav>
