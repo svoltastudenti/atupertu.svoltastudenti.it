@@ -373,7 +373,7 @@ layout: default
 
 <body>
     <header>
-        <img src="/assets/img/logo.pg" alt="ATuxTu-logo">
+        <img src="/assets/img/logo.png" alt="ATuxTu-logo">
     </header>
     <nav>
         <ul>
@@ -455,7 +455,7 @@ layout: default
         function sendVideoTrigger(e, type){
             e.target.dataset.id
             gtag('event', 'view_item', {
-                event_label: `associations/${e.target.dataset.animid}`,
+                event_label: `associations/${e.target.dataset.id}`,
                 event_category: `video_${type}`,
             });
         }
