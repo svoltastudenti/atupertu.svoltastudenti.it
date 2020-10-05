@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <script>
+            
+            window.googleAnalyticsLoaded = false;
+            function updateConsent(ad, stats){
+                gtag('consent', 'update', {
+                    'ad_storage': ad ? 'granted' : 'denied',
+                    'analytics_storage': stats ? 'granted' : 'denied',
+                });
+
+                console.log(ad, stats, ad || stats);
+                if (ad || stats){
+                    if (window.googleAnalyticsLoaded === false){
+                        var s = document.createElement("script");
+                        s.type = "text/javascript";
+                        s.src = "https://www.googletagmanager.com/gtag/js?id=G-3ZMEK66VK8";
+                        s.onload = _ => alert('hi');
+                        document.head.append(s);
+                        window.googleAnalyticsLoaded = true;
+                    }
+                    else {
+                        console.log("skipping");
+                    }
+
+                }
+            }
+
+            function gtag(){dataLayer.push(arguments);}
+
+            window.dataLayer = window.dataLayer || [];
+            
+            gtag('js', new Date());
+            gtag('config', 'G-3ZMEK66VK8');
+            gtag('consent', 'default', {
+                'ad_storage': 'denied',
+                'analytics_storage': 'denied',
+                'wait_for_update': 500
+            });
+
+            var _iub = _iub || [];
+            
+            _iub.csConfiguration = {
+                "consentOnContinuedBrowsing":false,"whitelabel":false,"lang":"it","siteId":1376159,"perPurposeConsent":true,"cookiePolicyId":27818292, "banner":{ "acceptButtonDisplay":true },
+                callback: {
+                    onReady: function() {
+                        if (!consentUpdated) {
+                            // Consent is needed and the user has not expressed his preference yet
+                            updateConsent(false, false);
+                        }
+                    },
+                    onPreferenceExpressedOrNotNeeded: function(preferences) {
+                        var ad_storage = false;
+                        var analytics_storage = false;
+                        if (preferences) {
+                            // Consent is needed and the user has expressed his preference
+                            if (preferences.purposes) {
+                                analytics_storage = preferences.purposes[4];
+                                ad_storage = preferences.purposes[5];
+                            } else {
+                                analytics_storage = ad_storage = preferences.consent;
+                            }
+                            updateConsent(ad_storage, analytics_storage);
+                            loadGoogleAnalytics();
+                        } else {
+                            // Consent is not needed
+                            updateConsent(true, true);
+                        }
+                    }
+                }
+            };
+    </script>
+    <script src="https://cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+    </head>
+</html>
