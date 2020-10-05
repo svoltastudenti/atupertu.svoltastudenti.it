@@ -17,6 +17,6 @@ description: "Un gruppo di ragazz* riunitisi in una lista di rappresentanza per
   riguardo temi ambientali, LGBTQ+, femministi, antirazzisti e tanto altro."
 published: true
 date: 2020-10-04T21:42:29.669Z
-order: 0
+order: 4
 ---
 useless
