@@ -304,282 +304,40 @@ layout: default
         }
     </style>
     <!-- Cookies and analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZMEK66VK8"></script> -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZMEK66VK8"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.googleAnalyticsLoaded = false;
+        function updateConsent(ad, stats){
+            gtag('consent', 'update', {
+                'ad_storage': ad ? 'granted' : 'denied',
+                'analytics_storage': stats ? 'granted' : 'denied',
+            });
 
-    gtag('config', 'G-3ZMEK66VK8');
-    </script> -->
-    <!-- <script>
-        // Initialize the data layer for Google Tag Manager (this should mandatorily be done before the Cookie Solution is loaded)
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            console.log(window.dataLayer);
-            window.dataLayer.push(arguments);
+            if (ad || stats){
+                if (window.googleAnalyticsLoaded === false){
+                    var s = document.createElement("script");
+                    s.type = "text/javascript";
+                    s.src = "https://www.googletagmanager.com/gtag/js?id=G-3ZMEK66VK8";
+                    s.onload = _ => alert('hi');
+                    document.head.append(s);
+                    window.googleAnalyticsLoaded = true;
+                }
+            }
         }
 
-        gtag('set', 'ads_data_redaction', true);
+        function gtag(){dataLayer.push(arguments);}
+
+        window.dataLayer = window.dataLayer || [];
 
         gtag('js', new Date());
         gtag('config', 'G-3ZMEK66VK8');
-    </script>
-    <script>
-        var consentUpdated = false;
-        // Update the existing consent
-        function updateConsent(ad_storage, analytics_storage) {
-            if (analytics_storage || ad_storage){
-                // Load Google Analytics
-                gtag({
-                    'gtm.start': new Date().getTime(),
-                    event: 'gtm.js'
-                });
-                
-                gtag('consent', 'update', {
-                    ad_storage: ad_storage ? 'granted' : 'denied',
-                    analytics_storage: analytics_storage ? 'granted' : 'denied'
-                });
-
-                let id = 'G-3ZMEK66VK8';
-                let j = document.createElement("script");
-                j.async = true;
-                j.src = `https://www.googletagmanager.com/gtm.js?id=${id}`;
-                console.log("appending");
-                document.head.appendChild(j);
-                consentUpdated = true;
-            }
-            else {
-                console.log('waiting');
-            }
-        }
-    </script>
-    <script>    
-        var _iub = _iub || [];
-        _iub.csConfiguration = {
-            "consentOnContinuedBrowsing":false,"whitelabel":false,"lang":"it","siteId":1376159,"perPurposeConsent":true,"cookiePolicyId":27818292, "banner":{ "acceptButtonDisplay":true },
-            callback: {
-                onReady: function() {
-                    if (!consentUpdated) {
-                        // Consent is needed and the user has not expressed his preference yet
-                        updateConsent(false, false);
-                    }
-                },
-                onPreferenceExpressedOrNotNeeded: function(preferences) {
-                    var ad_storage = false;
-                    var analytics_storage = false;
-                    if (preferences) {
-                        // Consent is needed and the user has expressed his preference
-                        if (preferences.purposes) {
-                            analytics_storage = preferences.purposes[4];
-                            ad_storage = preferences.purposes[5];
-                        } else {
-                            analytics_storage = ad_storage = preferences.consent;
-                        }
-                        updateConsent(ad_storage, analytics_storage);
-                    } else {
-                        // Consent is not needed
-                        updateConsent(true, true);
-                    }
-                }
-            }
-        };
-    </script>
-    <script src="https://cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script> -->
-    <!--<script>
-        // Define the gtag() function prior to your gtag.js or Tag Manager snippet. This should mandatorily be done before the Cookie Solution is loaded
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        // Further redact your ads data (optional)
-        gtag("set", "ads_data_redaction", true);
-        // Prepare Google Tag Manager but don't load it yet (it has to be loaded after the Cookie Solution)
-        (window.loadgtm = function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        });
-        
-        var consentCommand = "default";
-        // Set the default consent mode or update the existing consent
-        function updateConsent(ad_storage, analytics_storage, command) {
-            gtag("consent", command || consentCommand, {
-                ad_storage: ad_storage ? "granted" : "denied",
-                analytics_storage: analytics_storage ? "granted" : "denied"
-            });
-            consentCommand = "update";
-        }
-    </script>
-    <script>
-        var _iub = _iub || [];
-        _iub.csConfiguration = {
-            "consentOnContinuedBrowsing":false,"whitelabel":false,"lang":"it","siteId":1376159,"perPurposeConsent":true,"cookiePolicyId":27818292, "banner":{ "acceptButtonDisplay":true },
-            callback: {
-                onReady: function() {
-                    if (consentCommand === "default") {
-                        // Consent is needed and the user has not expressed his preference yet
-                        updateConsent(false, false);
-                    }
-                    // Load GTM 
-                    window.loadgtm(window, document, 'script', 'dataLayer', 'G-3ZMEK66VK8'); //replace GTM-XXXXXX with the ID of your Google Analytics property
-                },
-                onPreferenceExpressedOrNotNeeded: function(preferences) {
-                    var ad_storage = false;
-                    var analytics_storage = false;
-                    if (preferences) {
-                        // Consent is needed and the user has expressed his preference
-                        if (preferences.purposes) {
-                            analytics_storage = preferences.purposes[4];
-                            ad_storage = preferences.purposes[5];
-                        } else {
-                            analytics_storage = ad_storage = preferences.consent;
-                        }
-                    } else {
-                        // Consent is not needed
-                        ad_storage = true;
-                        analytics_storage = true;
-                    }
-                    updateConsent(ad_storage, analytics_storage, 'update');
-                }
-            }
-        };
-    </script>
-    <script src="https://cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>-->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZMEK66VK8"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-3ZMEK66VK8');
-    </script> -->
-    <!--<script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-    </script>
-    <script>
-        var consentUpdated = false;
-        // Update the existing consent
-        function updateConsent(ad_storage, analytics_storage) {
-            console.log(ad_storage, analytics_storage);
-            if (analytics_storage || ad_storage){
-                // Load Google Analytics
-                // gtag({
-                //     'gtm.start': new Date().getTime(),
-                //     event: 'gtm.js'
-                // });
-                
-                gtag('consent', 'default', {
-                    ad_storage: ad_storage ? 'granted' : 'denied',
-                    analytics_storage: analytics_storage ? 'granted' : 'denied'
-                });
-
-                gtag('js', new Date());
-
-                gtag('config', 'G-3ZMEK66VK8');
-
-                let id = 'G-3ZMEK66VK8';
-                let j = document.createElement("script");
-                console.log(j);
-                j.async = true;
-                j.src = `https://www.googletagmanager.com/gtm.js?id=${id}`;
-                j.onload = alert;
-                console.log("appending");
-                document.body.appendChild(j);
-                consentUpdated = true;
-            }
-            else {
-                console.log('waiting');
-            }
-        }
-    </script>
-    <script>    
-        var _iub = _iub || [];
-        _iub.csConfiguration = {
-            "consentOnContinuedBrowsing":false,"whitelabel":false,"lang":"it","siteId":1376159,"perPurposeConsent":true,"cookiePolicyId":27818292, "banner":{ "acceptButtonDisplay":true },
-            callback: {
-                onReady: function() {
-                    if (!consentUpdated) {
-                        // Consent is needed and the user has not expressed his preference yet
-                        updateConsent(false, false);
-                    }
-                },
-                onPreferenceExpressedOrNotNeeded: function(preferences) {
-                    var ad_storage = false;
-                    var analytics_storage = false;
-                    console.log(preferences);
-                    if (preferences) {
-                        // Consent is needed and the user has expressed his preference
-                        if (preferences.purposes) {
-                            analytics_storage = preferences.purposes[4];
-                            ad_storage = preferences.purposes[5];
-                        } else {
-                            analytics_storage = ad_storage = preferences.consent;
-                        }
-                        updateConsent(ad_storage, analytics_storage);
-                    } else {
-                        // Consent is not needed
-                        updateConsent(true, true);
-                    }
-                }
-            }
-        };
-    </script>
-    <script src="https://cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>-->
-    <!-- <script>
-        // Define the gtag() API
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments)};
-      
-        // Call default commands with static settings to fall back on.
-        // Consent commands must appear before gtag.js or Google Tag Manager is loaded
         gtag('consent', 'default', {
             'ad_storage': 'denied',
-            'analytics_storage': 'granted',
-            'wait_for_update': 5000
+            'analytics_storage': 'denied',
+            'wait_for_update': 500
         });
-      
-        // // Update the consent type settings when your consent tool initializes
-        // // This should be modified to work with your consent tool's API.
-        // ConsentTool.on('consent-tool-initialized', function(consentObject) {
-        //   gtag('consent', 'update', {
-        //     'ad_storage': consentObject.ADVERTISING == 'ACCEPT'
-        //       ? 'granted' : 'denied',
-        //     'analytics_storage': consentObject.ANALYTICS == 'ACCEPT'
-        //       ? 'granted' : 'denied',
-        //   });
-        // });
-      
-        // // Update the consent type settings when visitors update their consent
-        // // This should be modified to work with your consent tool's API.
-        // ConsentTool.on('consent-saved', function(consentObject) {
-        //   gtag('consent', 'update', {
-        //     'ad_storage': consentObject.ADVERTISING == 'ACCEPT'
-        //       ? 'granted' : 'denied',
-        //     'analytics_storage': consentObject.ANALYTICS == 'ACCEPT'
-        //       ? 'granted' : 'denied'
-        //   });
-        // });
-      </script> -->
-      <!-- <script>
-          function updateConsent(ad_storage, analytics_storage){
-            gtag('consent', 'update', {
-                ad_storage: ad_storage ? 'granted' : 'denied',
-                analytics_storage: analytics_storage ? 'granted' : 'denied'
-            });
-          }
 
         var _iub = _iub || [];
+        
         _iub.csConfiguration = {
             "consentOnContinuedBrowsing":false,"whitelabel":false,"lang":"it","siteId":1376159,"perPurposeConsent":true,"cookiePolicyId":27818292, "banner":{ "acceptButtonDisplay":true },
             callback: {
@@ -592,7 +350,6 @@ layout: default
                 onPreferenceExpressedOrNotNeeded: function(preferences) {
                     var ad_storage = false;
                     var analytics_storage = false;
-                    console.log(preferences);
                     if (preferences) {
                         // Consent is needed and the user has expressed his preference
                         if (preferences.purposes) {
@@ -602,103 +359,7 @@ layout: default
                             analytics_storage = ad_storage = preferences.consent;
                         }
                         updateConsent(ad_storage, analytics_storage);
-                    } else {
-                        // Consent is not needed
-                        updateConsent(true, true);
-                    }
-                }
-            }
-        };
-      </script>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZMEK66VK8"></script>
-      
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-      
-        gtag('config', 'G-3ZMEK66VK8');
-      </script> -->
-    <!-- End cookies -->
-    <!-- NEW -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script>
-        // Initialize the data layer for Google Tag Manager (this should mandatorily be done before the Cookie Solution is loaded)
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        // Default consent mode is "denied" for both ads and analytics, but delay for 2 seconds until the Cookie Solution is loaded
-        gtag("consent", "default", {
-            ad_storage: "denied",
-            analytics_storage: "denied",
-            wait_for_update: 2000 // milliseconds
-        });
-        // Further redact your ads data (optional)
-        gtag("set", "ads_data_redaction", true);
-        
-        // Google Tag Manager
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'G-3ZMEK66VK8'); //replace GTM-XXXXXX with the ID of your Google Analytics property
-        var consentUpdated = false;
-        // Update the existing consent
-        function updateConsent(ad_storage, analytics_storage) {
-            gtag("consent", "update", {
-                ad_storage: ad_storage ? "granted" : "denied",
-                analytics_storage: analytics_storage ? "granted" : "denied"
-            });
-            consentUpdated = true;
-        }
-    </script>
-    <!-- iubenda Cookie Solution -->
-    <script>    
-        var _iub = _iub || [];
-        
-        _iub.csConfiguration = {
-            lang: "en",
-            siteId: 1376159, //use your siteId
-            cookiePolicyId: 27818292, //use your cookiePolicyId
-            countryDetection: true,
-            perPurposeConsent: true,
-            purposes: "1,4,5",
-            consentOnContinuedBrowsing: false,
-            banner: {
-                position: "float-top-center",
-                acceptButtonDisplay: true,
-                customizeButtonDisplay: true,
-                rejectButtonDisplay: true
-            },
-            callback: {
-                onReady: function() {
-                    if (!consentUpdated) {
-                        // Consent is needed and the user has not expressed his preference yet
-                        updateConsent(false, false);
-                    }
-                },
-                onPreferenceExpressedOrNotNeeded: function(preferences) {
-                    var ad_storage = false;
-                    var analytics_storage = false;
-                    if (preferences) {
-                        // Consent is needed and the user has expressed his preference
-                        if (preferences.purposes) {
-                            analytics_storage = preferences.purposes[4];
-                            ad_storage = preferences.purposes[5];
-                        } else {
-                            analytics_storage = ad_storage = preferences.consent;
-                        }
-                        updateConsent(ad_storage, analytics_storage);
+                        loadGoogleAnalytics();
                     } else {
                         // Consent is not needed
                         updateConsent(true, true);
@@ -708,7 +369,7 @@ layout: default
         };
     </script>
     <script src="https://cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
-    <!-- END NEW -->
+    <!-- End Cookies and Analytics -->
 </head>
 
 <body>
