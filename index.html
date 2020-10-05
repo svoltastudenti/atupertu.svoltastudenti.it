@@ -453,12 +453,17 @@ layout: default
             observer.observe(item);
         })
 
+        function sendVideoTrigger(e, type){
+            e.target.dataset.id
+            gtag('event', 'view_item', {
+                event_label: `associations/${entry.target.dataset.animid}`,
+                event_category: `video_${type}`,
+            });
+        }
         document.querySelectorAll('video').forEach(item => {
-            item.addEventListener('play', el => console.log('play', el))
+            item.addEventListener('play', e => sendVideoTrigger(e, 'play'))
+            item.addEventListener('pause', e => sendVideoTrigger(e, 'pause'))
         });
-        document.querySelectorAll('video').forEach(item => {
-            item.addEventListener('pause', el => console.log('pause', el))
-        })
     </script>
 </body>
 
