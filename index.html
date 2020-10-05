@@ -125,13 +125,14 @@ layout: default
 
         #sfondo {
             position: fixed;
-            height: 100%;
-            width: 100%;
+            height: 100vh;
+            width: 100vw;
+            background-image: url("/assets/img/sfondo.png");
             background-origin: padding-box;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            filter: brightness(50%);
+            filter: brightness(40%);
         }
 
         section {
@@ -292,7 +293,7 @@ layout: default
 
             section video {
                 width: 250px;
-                top: 14vh;
+                top: 15vh;
                 left: 50vw;
                 transform: translate(-50%, 0);
             }
@@ -413,7 +414,7 @@ layout: default
     </nav>
 
     <main>
-        <img id="sfondo" src="/assets/img/sfondo.png" alt="">
+        <div id="sfondo"></div>
         {% for post in list %}
         <section id="{{ post.sku }}" class="animTrigger" data-animId="{{ post.sku }}">
             <img class="logo" data-animtarget="{{ post.sku }}"
