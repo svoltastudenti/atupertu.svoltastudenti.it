@@ -289,7 +289,7 @@ layout: default
 
             section video {
                 width: 250px;
-                top: 14vh;
+                top: 15vh;
                 left: 50vw;
                 transform: translate(-50%, 0);
             }
@@ -410,7 +410,7 @@ layout: default
     </nav>
 
     <main>
-        <img id="sfondo" src="/assets/img/sfondo.png" alt="">
+        <div id="sfondo"></div>
         {% for post in list %}
         <section id="{{ post.sku }}" class="animTrigger" data-animId="{{ post.sku }}">
             <img class="logo" data-animtarget="{{ post.sku }}"
