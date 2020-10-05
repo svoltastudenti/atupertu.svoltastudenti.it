@@ -13,6 +13,6 @@ description: Resilient - Glocal Action Project è un’associazione ecologista
   di pratiche ecosostenibili.
 published: true
 date: 2020-10-04T22:27:44.949Z
-order: 0
+order: 18
 ---
 useless
