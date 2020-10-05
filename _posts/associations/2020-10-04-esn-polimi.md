@@ -14,6 +14,6 @@ description: Erasmus Student Network Politecnico Milano is a non-profit,
   international students in our community.
 published: true
 date: 2020-10-04T22:26:04.942Z
-order: 0
+order: 12
 ---
 useless
