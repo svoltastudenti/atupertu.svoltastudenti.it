@@ -3,8 +3,7 @@ layout: associations
 category: associations
 title: Skyward Experimental Rocketry
 sku: skyward
-slogan: Progettiamo, costruiamo e lanciamo razzi sonda! We design, build and
-  launch sounding rockets!
+slogan: Progettiamo, costruiamo e lanciamo razzi sonda!
 type: Opportunità extradidattiche
 description: >-
   Skyward Experimental Rocketry è una dinamica associazione studentesca attiva
