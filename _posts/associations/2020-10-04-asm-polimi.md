@@ -23,6 +23,6 @@ description: >-
   It originated from the strong need of a solid institution that unifies the Muslims and provides a platform where they can openly express themselves and point out their exigences and problems in the academic life, trying to reduce the misconceptions about Islam and fostering and strengthening the muslim identity of the students along with integration."
 published: true
 date: 2020-10-04T22:28:28.509Z
-order: 0
+order: 5
 ---
 useless
