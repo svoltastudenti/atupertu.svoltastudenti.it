@@ -434,6 +434,9 @@ layout: default
                                     'screen_name' : `associations/${entry.target.dataset.animid}`
                                 });
                             }
+                            else {
+                                console.log(`Skip signal associations/${entry.target.dataset.animid}`);
+                            }
                         } else if (entry.intersectionRatio < 0.95) {
                             item.classList.remove('animActive');
                         }
