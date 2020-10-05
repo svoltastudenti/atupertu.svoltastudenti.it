@@ -381,7 +381,7 @@ layout: default
             {% assign list = site.categories.associations | sort: "order" %}
             {% for post in list %}
             <li data-animtarget="{{ post.sku }}"><a data-animtarget="{{ post.sku }}"
-                    href="#{{ post.sku }}">{{ post.title }}</a></li>
+                    href="#{{ post.sku }}" onclick="() => logMenuClick('{{ post.sku }}')">{{ post.title }}</a></li>
             {% endfor %}
         </ul>
     </nav>
@@ -432,7 +432,13 @@ layout: default
                             item.classList.remove('animActive');
                         }
                     })
-
+                    // gtag('event', 'view_item', {
+                    //     event_label: entry.target.dataset.animid
+                    // });
+                    gtag('event', 'screen_view', {
+                        // 'app_name': 'myAppName',
+                        'screen_name' : `associations/${entry.target.dataset.animid}`
+                    });
                 }
             });
         }, options);
@@ -440,6 +446,14 @@ layout: default
         document.querySelectorAll('.animTrigger').forEach(item => {
             observer.observe(item);
         })
+
+        function logMenuClick(item){
+            gtag('event', 'page_view', {
+                page_location: '<Page Location>',
+                page_path: item,
+                send_to: 'G-3ZMEK66VK8'
+            })
+        }
     </script>
 </body>
 
