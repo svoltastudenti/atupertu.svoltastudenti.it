@@ -23,4 +23,4 @@ collections:
       - {label: "Descrizione", name: "description", widget: "markdown"}
       - {label: "Pubblicato", name: "published", widget: "hidden", default: true}
       - {label: "Data di Pubblicazione (la programmazione NON e' supportata)", name: "date", widget: "datetime"}
-      - {label: "Order", name: "order", widget: "number", default: "0"}
+      - {label: "Order", name: "order", widget: "number", default: 0}

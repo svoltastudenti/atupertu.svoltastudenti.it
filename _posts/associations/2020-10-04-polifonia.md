@@ -12,6 +12,6 @@ description: L'obiettivo di Polifonia è quello di consentire agli studenti di
 cover: /assets/img/uploads/tavola-disegno-1.png
 published: true
 date: 2020-10-04T16:15:29.185Z
-order: "0"
+order: 0
 ---
 useless

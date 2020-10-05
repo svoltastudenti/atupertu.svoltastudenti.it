@@ -16,7 +16,7 @@ description: >-
   We are ready for revolution!
 published: true
 date: 2020-10-04T16:27:59.587Z
-order: "0"
+order: 0
 cover: /assets/img/uploads/copertina-1.png
 ---
 useless

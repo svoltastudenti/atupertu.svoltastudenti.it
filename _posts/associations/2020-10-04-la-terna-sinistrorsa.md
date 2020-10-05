@@ -16,6 +16,6 @@ description: >-
   La nostra idea condivisa di università è: diritto allo studio, qualità della didattica e vita universitaria. Ed è con il rafforzamento di questi tre concetti che vogliamo continuare a rappresentare gli studenti.
 published: true
 date: 2020-10-04T21:39:07.148Z
-order: "0"
+order: 0
 ---
 useless
