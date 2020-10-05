@@ -419,6 +419,7 @@ layout: default
             ]
         };
 
+        window.currentScreen = '';
         observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.target.dataset.animid) {
@@ -426,16 +427,16 @@ layout: default
                         `*[data-animtarget="${entry.target.dataset.animid}"]`);
                     targets.forEach(item => {
                         if (entry.intersectionRatio > 0.5) {
-                            if (!item.classList.contains('animActive')){
-                                item.classList.add('animActive');
-
+                            let newScreen = `associations/${entry.target.dataset.animid}`;
+                            item.classList.add('animActive');
+                            
+                            if (window.currentScreen !== newScreen){
                                 gtag('event', 'screen_view', {
-                                    // 'app_name': 'myAppName',
-                                    'screen_name' : `associations/${entry.target.dataset.animid}`
+                                    'screen_name' : newScreen
                                 });
                             }
                             else {
-                                console.log(`Skip signal associations/${entry.target.dataset.animid}`);
+                                console.log(`Skip signal ${newScreen}`);
                             }
                         } else if (entry.intersectionRatio < 0.95) {
                             item.classList.remove('animActive');
