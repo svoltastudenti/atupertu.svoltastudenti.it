@@ -404,7 +404,7 @@ layout: default
     </header>
     <nav>
         <ul>
-            {% assign list = site.categories.associations | sort "post.order" %}
+            {% assign list = site.categories.associations | sort: "post.order" %}
             {% for post in list %}
             <li data-animtarget="{{ post.sku }}"><a data-animtarget="{{ post.sku }}"
                     href="#{{ post.sku }}">{{ post.title }}</a></li>
