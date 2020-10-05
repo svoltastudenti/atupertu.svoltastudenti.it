@@ -66,7 +66,7 @@ layout: default
             backdrop-filter: blur(10px);
             background-color: rgba(0, 0, 0, 0.5);
             position: fixed;
-            height: 70vh;
+            height: 75vh;
             width: 25vw;
             z-index: 2;
             border-radius: 30px;
@@ -104,7 +104,7 @@ layout: default
         }
 
         nav ul li a.animActive {
-            font-size: 1.3vw;
+            font-size: 1.2vw;
             font-weight: 700;
             opacity: 1;
         }
@@ -140,9 +140,8 @@ layout: default
 
         section article {
             top: 20vh;
-            left: 35vw;
-            bottom: 20vh;
-            width: 30vw;
+            left: 33vw;
+            width: 32vw;
             position: absolute;
             display: flex;
             flex-direction: column;
@@ -157,6 +156,7 @@ layout: default
             position: relative;
             color: white;
             opacity: 0;
+            padding-left: 20px;
             z-index: 2;
             transition: opacity 1s;
         }
@@ -190,6 +190,11 @@ layout: default
             text-align: justify;
             margin-top: 2vh;
             font-size: 1em;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 25px;
+            padding: 20px;
         }
 
         section video {
@@ -297,8 +302,8 @@ layout: default
             .logo {
                 width: 60px;
                 height: 60px;
-                left: 20vw;
-                top: 45vh;
+                left: 22vw;
+                top: 44vh;
             }
 
         }
@@ -306,14 +311,15 @@ layout: default
     <!-- Cookies and analytics -->
     <script>
         window.googleAnalyticsLoaded = false;
-        function updateConsent(ad, stats){
+
+        function updateConsent(ad, stats) {
             gtag('consent', 'update', {
                 'ad_storage': ad ? 'granted' : 'denied',
                 'analytics_storage': stats ? 'granted' : 'denied',
             });
 
-            if (ad || stats){
-                if (window.googleAnalyticsLoaded === false){
+            if (ad || stats) {
+                if (window.googleAnalyticsLoaded === false) {
                     var s = document.createElement("script");
                     s.type = "text/javascript";
                     s.src = "https://www.googletagmanager.com/gtag/js?id=G-3ZMEK66VK8";
@@ -323,7 +329,9 @@ layout: default
             }
         }
 
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
         window.dataLayer = window.dataLayer || [];
 
@@ -336,17 +344,25 @@ layout: default
         });
 
         var _iub = _iub || [];
-        
+
         _iub.csConfiguration = {
-            "consentOnContinuedBrowsing":false,"whitelabel":false,"lang":"it","siteId":1376159,"perPurposeConsent":true,"cookiePolicyId":27818292, "banner":{ "acceptButtonDisplay":true },
+            "consentOnContinuedBrowsing": false,
+            "whitelabel": false,
+            "lang": "it",
+            "siteId": 1376159,
+            "perPurposeConsent": true,
+            "cookiePolicyId": 27818292,
+            "banner": {
+                "acceptButtonDisplay": true
+            },
             callback: {
-                onReady: function() {
+                onReady: function () {
                     if (!consentUpdated) {
                         // Consent is needed and the user has not expressed his preference yet
                         updateConsent(false, false);
                     }
                 },
-                onPreferenceExpressedOrNotNeeded: function(preferences) {
+                onPreferenceExpressedOrNotNeeded: function (preferences) {
                     var ad_storage = false;
                     var analytics_storage = false;
                     if (preferences) {
@@ -379,7 +395,8 @@ layout: default
         <ul>
             {% assign list = site.categories.associations | sort: "order" %}
             {% for post in list %}
-            <li data-animtarget="{{ post.sku }}"><a data-animtarget="{{ post.sku }}" href="#{{ post.sku }}">{{ post.title }}</a></li>
+            <li data-animtarget="{{ post.sku }}"><a data-animtarget="{{ post.sku }}"
+                    href="#{{ post.sku }}">{{ post.title }}</a></li>
             {% endfor %}
         </ul>
     </nav>
@@ -396,7 +413,8 @@ layout: default
                 <h3 data-animtarget="{{ post.sku }}">{{ post.type }}</h3>
                 <p data-animtarget="{{ post.sku }}">{{ post.description }}</p>
             </article>
-            <video controls poster="https://videoatupertu.svoltastudenti.it/cover/{{ post.sku }}.jpg" data-id="{{ post.sku }}">
+            <video controls poster="https://videoatupertu.svoltastudenti.it/cover/{{ post.sku }}.jpg"
+                data-id="{{ post.sku }}">
                 <source src="https://videoatupertu.svoltastudenti.it/video/{{ post.sku }}.mp4" type="video/mp4">
                 Your browser does not support HTML video.
             </video>
@@ -428,9 +446,9 @@ layout: default
                         if (entry.intersectionRatio > 0.5) {
                             let newScreen = `associations/${entry.target.dataset.animid}`;
                             item.classList.add('animActive');
-                            if (window.currentScreen !== newScreen){
+                            if (window.currentScreen !== newScreen) {
                                 gtag('event', 'screen_view', {
-                                    'screen_name' : newScreen
+                                    'screen_name': newScreen
                                 });
                             }
                             document.querySelectorAll('video').forEach(item => {
@@ -452,7 +470,7 @@ layout: default
             observer.observe(item);
         })
 
-        function sendVideoTrigger(e, type){
+        function sendVideoTrigger(e, type) {
             e.target.dataset.id
             gtag('event', 'view_item', {
                 event_label: `associations/${e.target.dataset.id}`,
