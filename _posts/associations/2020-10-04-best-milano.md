@@ -19,6 +19,6 @@ description: >-
   BEST Milano nasce nel 1998, facendo sua la struttura propria degli altri gruppi BEST europei nonché gli scopi dell’associazione BEST Internazionale. Uno tra gli obiettivi principali di BEST Milano è quello di dare agli studenti del Politecnico di Milano l’opportunità di arricchire la propria preparazione accademica, ottenendo preziose esperienze e diversificando i propri curricula.
 published: true
 date: 2020-10-04T21:34:58.863Z
-order: 0
+order: 9
 ---
 useless
