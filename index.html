@@ -426,12 +426,14 @@ layout: default
                         `*[data-animtarget="${entry.target.dataset.animid}"]`);
                     targets.forEach(item => {
                         if (entry.intersectionRatio > 0.5) {
-                            item.classList.add('animActive');
+                            if (!entry.classList.contains('animActive')){
+                                item.classList.add('animActive');
 
-                            gtag('event', 'screen_view', {
-                                // 'app_name': 'myAppName',
-                                'screen_name' : `associations/${entry.target.dataset.animid}`
-                            });
+                                gtag('event', 'screen_view', {
+                                    // 'app_name': 'myAppName',
+                                    'screen_name' : `associations/${entry.target.dataset.animid}`
+                                });
+                            }
                         } else if (entry.intersectionRatio < 0.95) {
                             item.classList.remove('animActive');
                         }
