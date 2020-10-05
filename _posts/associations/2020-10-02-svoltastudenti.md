@@ -11,7 +11,7 @@ sku: svolta
 slogan: "#Beyondlessons"
 type: Lista di Rappresentanza
 description: >-
-  <p> Svoltastudenti è un’associazione studentesca no-profit apartitica e
+  Svoltastudenti è un’associazione studentesca no-profit apartitica e
   aconfessionale, la prima in Italia a rispecchiare il modello anglosassone
   delle students’ union. Per noi students’ union significa due anime: una
   associativa e l’altra di rappresentanza. È costituita da studenti, con lo
@@ -23,6 +23,6 @@ description: >-
   community partecipativa con eventi sportivi e di student life.
 
 
-  <p> Svoltastudenti is a non-profit, non-partisan and a-religious students’ union. Meaning two coexisting souls: one associative the other representative. Our mission is to create opportunities, spread culture and implement projects. Our values are internationalization, teaching & innovation, participation, sport & student life.
+  Svoltastudenti is a non-profit, non-partisan and a-religious students’ union. Meaning two coexisting souls: one associative the other representative. Our mission is to create opportunities, spread culture and implement projects. Our values are internationalization, teaching & innovation, participation, sport & student life.
 ---
 derbghnjhgfdsa
