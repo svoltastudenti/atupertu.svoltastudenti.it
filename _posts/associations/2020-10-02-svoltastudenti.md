@@ -1,8 +1,12 @@
 ---
 layout: associations
+logo: /assets/img/uploads/logo-rettangolo-bianco.ai.png
+published: true
+date: 2020-10-02T19:14:19.259Z
+order: 1
+cover: /assets/img/uploads/image00001.jpeg
 category: associations
 title: Svoltastudenti
-logo: /assets/img/uploads/logo-rettangolo-bianco.ai.png
 sku: svolta
 slogan: "#Beyondlessons"
 type: Lista di Rappresentanza
@@ -19,12 +23,9 @@ description: >-
   community partecipativa con eventi sportivi e di student life.
 
 
+  `<br>`
 
 
   Svoltastudenti is a non-profit, non-partisan and a-religious students’ union. Meaning two coexisting souls: one associative the other representative. Our mission is to create opportunities, spread culture and implement projects. Our values are internationalization, teaching & innovation, participation, sport & student life.
-cover: /assets/img/uploads/image00001.jpeg
-published: true
-date: 2020-10-02T19:14:19.259Z
-order: 1
 ---
 derbghnjhgfdsa
