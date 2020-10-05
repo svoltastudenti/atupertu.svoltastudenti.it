@@ -17,6 +17,6 @@ description: >-
 cover: /assets/img/uploads/img_20200929_213840.jpg
 published: true
 date: 2020-10-05T10:47:28.540Z
-order: "0"
+order: 0
 ---
 useless
