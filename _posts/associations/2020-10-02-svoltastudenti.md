@@ -23,6 +23,10 @@ description: >-
   community partecipativa con eventi sportivi e di student life.
 
 
+
+
+
+
   Svoltastudenti is a non-profit, non-partisan and a-religious students’ union. Meaning two coexisting souls: one associative the other representative. Our mission is to create opportunities, spread culture and implement projects. Our values are internationalization, teaching & innovation, participation, sport & student life.
 ---
 derbghnjhgfdsa
