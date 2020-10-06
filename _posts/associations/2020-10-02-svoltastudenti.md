@@ -20,9 +20,7 @@ description: >-
   mobilità e l’internazionalizzazione, ci battiamo costantemente per il merito,
   per le pari opportunità e per una didattica in continuo miglioramento. Infine,
   crediamo nel #beyondlessons, quindi alimentiamo le vostre passioni creando una
-  community partecipativa con eventi sportivi e di student life.
-
-
+  community partecipativa con eventi sportivi e di student life. 
 
 
 
