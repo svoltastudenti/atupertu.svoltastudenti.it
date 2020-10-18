@@ -406,16 +406,16 @@ layout: default
         {% for post in list %}
         <section id="{{ post.sku }}" class="animTrigger" data-animId="{{ post.sku }}">
             <img class="logo" data-animtarget="{{ post.sku }}"
-                src="https://videoatupertu.svoltastudenti.it/logo/{{ post.sku }}.png" alt="Logo {{ post.title }}">
+                src="/assets/cdn/logo/{{ post.sku }}.png" alt="Logo {{ post.title }}">
             <article>
                 <h1 data-animtarget="{{ post.sku }}">{{ post.title }}</h1>
                 <h2 data-animtarget="{{ post.sku }}">{{ post.slogan }}</h2>
                 <h3 data-animtarget="{{ post.sku }}">{{ post.type }}</h3>
                 <p data-animtarget="{{ post.sku }}">{{ post.description }}</p>
             </article>
-            <video controls poster="https://videoatupertu.svoltastudenti.it/cover/{{ post.sku }}.jpg"
+            <video controls poster="/assets/cdn/cover/{{ post.sku }}.jpg"
                 data-id="{{ post.sku }}">
-                <source src="https://videoatupertu.svoltastudenti.it/video/{{ post.sku }}.mp4" type="video/mp4">
+                <source src="/assets/cdn/video/{{ post.sku }}.mp4" type="video/mp4">
                 Your browser does not support HTML video.
             </video>
         </section>
