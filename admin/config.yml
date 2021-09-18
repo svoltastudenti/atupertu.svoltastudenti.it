@@ -1,9 +1,5 @@
 backend:
-  name: github
-  repo: svoltastudenti/atupertu.svoltastudenti.it
-  accept_roles: #optional - accepts all users if left out
-    - admin
-    - editor
+  name: git-gateway
 media_folder: "assets/img/uploads"
 public_folder: "/assets/img/uploads"
 collections:
