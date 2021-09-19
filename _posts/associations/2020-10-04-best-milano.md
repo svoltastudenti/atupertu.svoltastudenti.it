@@ -3,7 +3,7 @@ layout: associations
 category: associations
 title: BEST Milano
 sku: best
-slogan: Empowering diversity, developing students.
+slogan: Empowered diversity, developing students.
 type: Opportunità extradidattiche
 description: >-
   Board of European Students of Technology (BEST) è un’associazione studentesca

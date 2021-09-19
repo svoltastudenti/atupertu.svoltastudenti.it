@@ -6,16 +6,14 @@ sku: bea
 slogan: From students to students
 type: Opportunità extradidattiche
 description: >-
-  BEA, Biomedical Engineering Association, è l’associazione degli studenti di
-  Ingegneria Biomedica del Politecnico di Milano. BEA nasce dagli studenti per
-  gli studenti, con il desiderio di creare una rete di condivisione di
-  esperienze, idee ed informazioni.  Problemi con il Piano degli Studi?
-  Indecisione sulle materie a scelta? Vorresti visitare un’azienda del settore
-  biomedicale?  Se vuoi saperne di più, non esitare a contattarci! Ti aspettiamo
-  al nostro prossimo evento ;)
+  Associazione di Ingegneria Biomedica con l'idea di fornire supporto a tutti
+  coloro che mostrano un interesse in ambito biomedico. Ha lo scopo di guidare
+  gli studenti di Ingegneria Biomedica all'interno dell'Università e offrire
+  loro un possibile contatto con il mondo del lavoro, mettendoli in relazione
+  con aziende, ex studenti ed esperti tramite gite e conferenze.
 
 
-  BEA, Biomedical Engineering Association, is the Association of Biomedical Engineering students of Politecnico di Milano. Our goal is to create a network among students, giving them the opportunity to share information, ideas and experiences.  If you are in trouble with your study plan, if you want to discover companies involved in the Biomedical field…Here you will find friends, ready to help you and to share with you their personal experiences!  If you want to know more, just contact us! Hope to see you soon ;)
+  Biomedical Engineering Association with the idea of providing support to all those who show an interest in the biomedical field. It aims to guide Biomedical Engineering students within the University and offer them a possible contact with the world of work, connecting them with companies, alumni and experts through trips and conferences.
 published: true
 date: 2020-10-04T22:26:57.677Z
 order: 8
