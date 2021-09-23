@@ -15,6 +15,6 @@ description: ESTIEM (European Students of Industrial Engineering and Management)
   supporto alla crescita professionale e personale dei nostri membri.
 published: true
 date: 2021-09-23T08:58:25.736Z
-order: 0
+order: 22
 ---
 useless
