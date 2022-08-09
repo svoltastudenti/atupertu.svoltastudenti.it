@@ -1,5 +1,7 @@
 backend:
   name: git-gateway
+  repo: svoltastudenti/atupertu.svoltastudenti.it
+  branch: master
 media_folder: "assets/img/uploads"
 public_folder: "/assets/img/uploads"
 collections:
