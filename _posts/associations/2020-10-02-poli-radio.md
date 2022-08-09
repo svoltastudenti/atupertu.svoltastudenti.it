@@ -4,7 +4,7 @@ category: associations
 title: POLI.RADIO
 sku: poliradio
 slogan: Not AM not FM
-type: Associazione
+type: Opportunità extradidattiche
 description: Web radio ufficiale degli studenti del Politecnico di Milano. milano
 published: true
 date: 2020-10-02T09:54:46.722Z
