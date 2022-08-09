@@ -5,7 +5,7 @@ title: POLI.RADIO
 sku: poliradio
 slogan: Not AM not FM
 type: Community e vita associativa
-description: Web radio ufficiale degli studenti del Politecnico di Milano.
+description: Web radio ufficiale degli studenti del Politecnico di Milano. milano
 published: true
 date: 2020-10-02T09:54:46.722Z
 order: 6
