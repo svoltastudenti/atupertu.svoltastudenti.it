@@ -3,7 +3,7 @@ layout: associations
 category: associations
 title: POLI.RADIO
 sku: poliradio
-slogan: Not AM not FM on web
+slogan: Not AM not FM
 type: Community e vita associativa
 description: Web radio ufficiale degli studenti del Politecnico di Milano.
 published: true
