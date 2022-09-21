@@ -10,6 +10,6 @@ description: PoliNetwork è una community di studenti per studenti che ha
   contatti, materiale, software e molto altro!
 published: true
 date: 2022-09-21T15:51:58.331Z
-order: 0
+order: 24
 ---
 useless
