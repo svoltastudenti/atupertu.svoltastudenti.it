@@ -12,6 +12,6 @@ description: NINE è un'associazione nata nel 2021 con l'idea di essere un luogo
   applicate a diversi ambiti.
 published: true
 date: 2022-09-21T15:51:07.595Z
-order: 0
+order: 25
 ---
 useless
