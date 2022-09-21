@@ -3,14 +3,15 @@ layout: associations
 category: associations
 title: Automation Engineering Association
 sku: aea
-slogan: Eat Sleep Control Repeat
+slogan: Eat sleep control & repeat!
 type: Community e vita associativa
-description: AEA, Automation Engineering Association, is the Automation and
-  Robotics Association of Politecnico di Milano. Built by students for students,
-  if you join us you can learn with experts' speeches, build a strong network
-  getting in touch with future-oriented and open minded people, visit automation
-  companies, work on automation and robotics related projects and better
-  understand your possible future working and academic career opportunities.
+description: AEA, Automation Engineering Association, è la associazione di
+  Automazione e Robotica del Politecnico di Milano. Costruita da studenti per
+  gli studenti, se ti unisci a noi potrai seguire masterclass di esperti,
+  costruire un forte network di persone che condividono obiettivi comuni,
+  visitare aziende di automazione, lavorare su progetti, partecipare a
+  competizioni internazionali e comprendere meglio le tue future possibilità di
+  carriera.
 published: true
 date: 2021-09-19T13:51:55.453Z
 order: 9
