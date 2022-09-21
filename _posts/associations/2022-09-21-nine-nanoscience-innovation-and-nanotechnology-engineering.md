@@ -1,7 +1,7 @@
 ---
 layout: associations
 category: associations
-title: NINE - Nanoscience Innovation and Nanotechnology Engineering
+title: "NINE "
 sku: nine
 slogan: The small world of great things
 type: Attività Culturali
