@@ -3,18 +3,13 @@ layout: associations
 category: associations
 title: Teatro delle Biglie
 sku: tdb
-slogan: Stay tuned stay Biglia - formiamo sogni da solide realtà
+slogan: '"Il cinema vi renderà famosi, la televisione vi renderà ricchi, ma il
+  teatro vi farà bene." - Terrence Mann'
 type: Attività Culturali
-description: "Siamo il Teatro delle Biglie, un’associazione che riunisce
-  studenti di tutte le facoltà nella comune passione per il teatro. Ogni anno
-  proponiamo laboratori per tutti gli studenti, con o senza formazione teatrale,
-  che vogliano avvicinarsi al mondo della recitazione. Crescendo di anno in anno
-  l’associazione ha proposto anche laboratori non strettamente teatrali, legati
-  all’espressione di sé: improvvisazione, danza, dizione, mnemotecnica, ma anche
-  scrittura creativa e fotografia. Molti dei laboratori culminano in spettacoli
-  e performance dove i partecipanti hanno l’occasione di mettere in pratica ciò
-  che hanno imparato. Ciò che apprendiamo ed usiamo nel teatro diventerà parte
-  anche della nostra vita di tutti i giorni."
+description: Il Teatro delle Biglie è un’associazione senza scopo di lucro. La
+  sua missione è aiutare gli studenti del Politecnico di Milano a sviluppare la
+  consapevolezza nei propri mezzi espressivi. Il mezzo con cui l’associazione
+  cerca di compiere la sua missione è l’organizzazione di attività culturali.
 published: true
 date: 2020-10-01T20:20:00.000Z
 order: 7
