@@ -10,6 +10,6 @@ description: Siamo un'associazione ed una community di hacker. Organizziamo
   progetti liberi e open source.
 published: true
 date: 2022-09-21T15:53:12.942Z
-order: 0
+order: 23
 ---
 useless
