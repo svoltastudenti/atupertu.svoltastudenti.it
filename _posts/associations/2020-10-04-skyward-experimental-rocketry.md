@@ -2,7 +2,7 @@
 layout: associations
 category: associations
 title: Skyward Experimental Rocketry
-sku: " skyward"
+sku: skyward
 slogan: " - "
 type: Opportunità extradidattiche
 description: L’associazione del Politecnico che si occupa della realizzazione di
