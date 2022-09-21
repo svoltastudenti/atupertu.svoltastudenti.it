@@ -13,6 +13,6 @@ description: Starting Finance Club PoliMi è un luogo di incontro per ragazzi e
   Finance, la più grande community finanziaria per millennials in Italia.
 published: true
 date: 2022-09-21T15:53:57.924Z
-order: 0
+order: 22
 ---
 useless
