@@ -4,16 +4,14 @@ category: associations
 title: BEA Polimi
 sku: bea
 slogan: From students to students
-type: Opportunità extradidattiche
+type: Community e vita associativa
 description: >-
-  Associazione di Ingegneria Biomedica con l'idea di fornire supporto a tutti
-  coloro che mostrano un interesse in ambito biomedico. Ha lo scopo di guidare
-  gli studenti di Ingegneria Biomedica all'interno dell'Università e offrire
-  loro un possibile contatto con il mondo del lavoro, mettendoli in relazione
-  con aziende, ex studenti ed esperti tramite gite e conferenze.
+  BEA nasce dagli studenti per gli studenti nel giugno del 2017. Vogliamo
+  rappresentare un punto di informazione per tutti gli studenti di Ingegneria
+  Biomedica del Polimi per migliorare la loro esperienza universitaria, sia a
+  livello accademico che sociale.\
 
-
-  Biomedical Engineering Association with the idea of providing support to all those who show an interest in the biomedical field. It aims to guide Biomedical Engineering students within the University and offer them a possible contact with the world of work, connecting them with companies, alumni and experts through trips and conferences.
+  Nei nostri progetti rientra offrire un database di esperienze degli studenti e fare da tramite con l’università per offrire opportunità formative anche al di fuori delle lezioni.
 published: true
 date: 2020-10-04T22:26:57.677Z
 order: 8
