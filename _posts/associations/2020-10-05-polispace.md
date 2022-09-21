@@ -6,21 +6,12 @@ title: PoliSpace
 sku: polispace
 slogan: Alatis Grave Nihil
 type: Opportunità extradidattiche
-description: >-
-  Polispace is a non-profit student organization founded in September 2020, the
-  first completely space-related association of Politecnico di Milano. 
-
-
-  It has three main objectives: 
-
-
-  \- offer students hands-on experiences on real space engineering projects 
-
-
-  \- help them building their network in the aerospace sector 
-
-
-  \- spread the aerospace culture and opportunities
+description: "PoliSpace is a student organization completely space-related.
+  Among its objectives: offer students hands-on experience on space engineering
+  projects, help them building their network in the aerospace sector, and spread
+  the aerospace culture. Some of its active projects include the development of
+  a satellite, of a tool to train astronauts retrieving samples on the Moon, and
+  of a suite of sensors to validate the payload bay of a space launcher."
 published: true
 date: 2020-10-05T10:47:28.540Z
 order: 22
