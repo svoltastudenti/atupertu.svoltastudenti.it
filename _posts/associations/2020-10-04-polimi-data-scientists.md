@@ -2,7 +2,7 @@
 layout: associations
 category: associations
 title: Polimi Data Scientists
-sku: datascientist
+sku: datascientists
 slogan: The Data Science Association of Polimi
 type: Community e vita associativa
 description: >-
