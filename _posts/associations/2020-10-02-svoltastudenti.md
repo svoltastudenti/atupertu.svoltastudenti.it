@@ -1,30 +1,21 @@
 ---
 layout: associations
 logo: /assets/img/uploads/logo-rettangolo-bianco.ai.png
+category: associations
+title: Svoltastudenti
+sku: svolta
+slogan: "#beyondlessons"
+type: Lista di Rappresentanza
+description: >-
+  Svoltastudenti è la prima lista che è riuscita a far convivere due realtà così
+  diverse tra loro: la rappresentanza e l’associazione. 
+
+  Costituita da studenti ha lo scopo di offrire corsi, sport, viaggi, favorire la mobilità inter universitaria e garantire la qualità dell'offerta formativa attraverso la rappresentanza.
+
+  È anche la prima associazione studentesca italiana a rispecchiare il modello anglosassone delle Students' Union, del tutto svincolata dal partitismo politico.
 published: true
 date: 2020-10-02T19:14:19.259Z
 order: 1
 cover: /assets/img/uploads/image00001.jpeg
-category: associations
-title: Svoltastudenti
-sku: svolta
-slogan: "#Beyondlessons"
-type: Lista di Rappresentanza
-description: >-
-  Svoltastudenti è un’associazione studentesca no-profit apartitica e
-  aconfessionale, la prima in Italia a rispecchiare il modello anglosassone
-  delle students’ union. Per noi students’ union significa due anime: una
-  associativa e l’altra di rappresentanza. È costituita da studenti, con lo
-  scopo di offrire corsi, sport, viaggi, favorire la mobilità interuniversitaria
-  e garantire la qualità dell’offerta formativa. I nostri valori sono la
-  mobilità e l’internazionalizzazione, ci battiamo costantemente per il merito,
-  per le pari opportunità e per una didattica in continuo miglioramento. Infine,
-  crediamo nel #beyondlessons, quindi alimentiamo le vostre passioni creando una
-  community partecipativa con eventi sportivi e di student life. 
-
-
-
-
-  Svoltastudenti is a non-profit, non-partisan and a-religious students’ union. Meaning two coexisting souls: one associative the other representative. Our mission is to create opportunities, spread culture and implement projects. Our values are internationalization, teaching & innovation, participation, sport & student life.
 ---
 derbghnjhgfdsa
