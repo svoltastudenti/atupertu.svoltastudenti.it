@@ -14,7 +14,7 @@ description: "PoliSpace is a student organization completely space-related.
   of a suite of sensors to validate the payload bay of a space launcher."
 published: true
 date: 2020-10-05T10:47:28.540Z
-order: 22
+order: 16
 cover: /assets/img/uploads/img_20200929_213840.jpg
 ---
 useless
