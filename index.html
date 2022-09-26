@@ -458,9 +458,9 @@ layout: default
                             window.currentScreen = newScreen;
                             
                             laxyload(entry.target);
+                            item.querySelector('video').load();
                             document.querySelectorAll('video').forEach(item => {
                                 item.pause();
-                                item.load();
                             });
                         } else if (entry.intersectionRatio < 0.95) {
                             item.classList.remove('animActive');
