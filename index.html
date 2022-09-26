@@ -344,47 +344,47 @@ layout: default
             'wait_for_update': 500
         });*/
 
-        var _iub = _iub || [];
+        // var _iub = _iub || [];
 
-        _iub.csConfiguration = {
-            "consentOnContinuedBrowsing": false,
-            "whitelabel": false,
-            "lang": "it",
-            "siteId": 1376159,
-            "perPurposeConsent": true,
-            "cookiePolicyId": 27818292,
-            "banner": {
-                "acceptButtonDisplay": true
-            },
-            /*callback: {
-                onReady: function () {
-                    if (!consentUpdated) {
-                        // Consent is needed and the user has not expressed his preference yet
-                        updateConsent(false, false);
-                    }
-                },
-                onPreferenceExpressedOrNotNeeded: function (preferences) {
-                    var ad_storage = false;
-                    var analytics_storage = false;
-                    if (preferences) {
-                        // Consent is needed and the user has expressed his preference
-                        if (preferences.purposes) {
-                            analytics_storage = preferences.purposes[4];
-                            ad_storage = preferences.purposes[5];
-                        } else {
-                            analytics_storage = ad_storage = preferences.consent;
-                        }
-                        updateConsent(ad_storage, analytics_storage);
-                        loadGoogleAnalytics();
-                    } else {
-                        // Consent is not needed
-                        updateConsent(true, true);
-                    }
-                }
-            }*/
-        };
+        // _iub.csConfiguration = {
+        //     "consentOnContinuedBrowsing": false,
+        //     "whitelabel": false,
+        //     "lang": "it",
+        //     "siteId": 1376159,
+        //     "perPurposeConsent": true,
+        //     "cookiePolicyId": 27818292,
+        //     "banner": {
+        //         "acceptButtonDisplay": true
+        //     },
+        //     /*callback: {
+        //         onReady: function () {
+        //             if (!consentUpdated) {
+        //                 // Consent is needed and the user has not expressed his preference yet
+        //                 updateConsent(false, false);
+        //             }
+        //         },
+        //         onPreferenceExpressedOrNotNeeded: function (preferences) {
+        //             var ad_storage = false;
+        //             var analytics_storage = false;
+        //             if (preferences) {
+        //                 // Consent is needed and the user has expressed his preference
+        //                 if (preferences.purposes) {
+        //                     analytics_storage = preferences.purposes[4];
+        //                     ad_storage = preferences.purposes[5];
+        //                 } else {
+        //                     analytics_storage = ad_storage = preferences.consent;
+        //                 }
+        //                 updateConsent(ad_storage, analytics_storage);
+        //                 loadGoogleAnalytics();
+        //             } else {
+        //                 // Consent is not needed
+        //                 updateConsent(true, true);
+        //             }
+        //         }
+        //     }*/
+        // };
     </script>
-    <script src="https://cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+    <!-- <script src="https://cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script> -->
     <!-- End Cookies and Analytics -->
 </head>
 
