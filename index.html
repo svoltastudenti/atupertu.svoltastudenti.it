@@ -463,8 +463,8 @@ layout: default
                                 .forEach(item => {
                                     let key = item.dataset.laxy;
                                     item.setAttribute(key, item.dataset[`laxy-${item.dataset.laxy}`]);
-                                    item.dataset.laxy = undefined;
-                                    item.dataset[`laxy-${item.dataset.laxy}`] = undefined;
+                                    delete item.dataset.laxy;
+                                   delete item.dataset[`laxy-${item.dataset.laxy}`];
                                 });
                         } else if (entry.intersectionRatio < 0.95) {
                             item.classList.remove('animActive');
