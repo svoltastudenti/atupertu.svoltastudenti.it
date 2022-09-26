@@ -410,16 +410,16 @@ layout: default
                 src="https://cdn.svoltastudenti.it/atuxtu/logo/{{ post.sku }}.png" alt="Logo {{ post.title }}">-->
             
             <img class="logo" data-animtarget="{{ post.sku }}"
-                src="https://atupertu.svoltastudenti.it/assets/cdn/logo/{{ post.sku }}.png" alt="Logo {{ post.title }}">
+            data-laxy="src" data-laxy-src="https://atupertu.svoltastudenti.it/assets/cdn/logo/{{ post.sku }}.png" alt="Logo {{ post.title }}">
             <article>
                 <h1 data-animtarget="{{ post.sku }}">{{ post.title }}</h1>
                 <h2 data-animtarget="{{ post.sku }}">{{ post.slogan }}</h2>
                 <h3 data-animtarget="{{ post.sku }}">{{ post.type }}</h3>
                 <p data-animtarget="{{ post.sku }}">{{ post.description }}</p>
             </article>
-            <video controls poster="https://atupertu.svoltastudenti.it/assets/cdn/cover/{{ post.sku }}.WEBP"
+            <video controls data-laxy="poster" data-laxy-poster="https://atupertu.svoltastudenti.it/assets/cdn/cover/{{ post.sku }}.webp"
                 data-id="{{ post.sku }}">
-                <source src="https://cdn.svoltastudenti.it/atuxtu/video/{{ post.sku }}.mp4" type="video/mp4">
+                <source data-laxy="src" data-laxy-src="https://cdn.svoltastudenti.it/atuxtu/video/{{ post.sku }}.mp4" type="video/mp4">
                 Your browser does not support HTML video.
             </video>
         </section>
@@ -459,6 +459,13 @@ layout: default
                                 item.pause();
                             });
                             window.currentScreen = newScreen;
+                            entry.target.querySelectorAll('*[data-laxy]')
+                                .forEach(item => {
+                                    let key = item.dataset.laxy;
+                                    item.setAttribute(key, item.dataset[`laxy-${item.dataset.laxy}`]);
+                                    item.dataset.laxy = undefined;
+                                    item.dataset[`laxy-${item.dataset.laxy}`] = undefined;
+                                });
                         } else if (entry.intersectionRatio < 0.95) {
                             item.classList.remove('animActive');
                         }
