@@ -458,7 +458,6 @@ layout: default
                             window.currentScreen = newScreen;
                             
                             laxyload(entry.target);
-                            item.querySelector('video').load();
                             document.querySelectorAll('video').forEach(item => {
                                 item.pause();
                             });
@@ -479,6 +478,7 @@ layout: default
                     let key = item.dataset.laxy;
                     // console.log(key);
                     item.setAttribute(key, item.dataset[`laxy${key}`]);
+                    el.querySelector('video').load();
                     delete item.dataset.laxy;
                     delete item.dataset[`laxy${key}`];
                 });
