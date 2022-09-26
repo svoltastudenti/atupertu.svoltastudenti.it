@@ -87,7 +87,7 @@ layout: default
 
         nav ul li {
             margin: 3px;
-            /*transition: margin 1s;*/
+            transition: margin 1s;
         }
 
         nav ul li.animActive {
@@ -101,7 +101,7 @@ layout: default
             font-weight: 400;
             color: white;
             opacity: 0.7;
-            /*transition: font-size 0.5s;*/
+            transition: font-size 0.5s;
         }
 
         nav ul li a.animActive {
@@ -159,7 +159,7 @@ layout: default
             opacity: 0;
             padding-left: 20px;
             z-index: 2;
-            /*transition: opacity 1s;*/
+            transition: opacity 1s;
         }
 
         section article h1.animActive,
@@ -410,16 +410,16 @@ layout: default
                 src="https://cdn.svoltastudenti.it/atuxtu/logo/{{ post.sku }}.png" alt="Logo {{ post.title }}">-->
             
             <img class="logo" data-animtarget="{{ post.sku }}"
-            data-laxy="src" data-laxy-src="https://atupertu.svoltastudenti.it/assets/cdn/logo/{{ post.sku }}.png" alt="Logo {{ post.title }}">
+            data-laxy="src" data-laxysrc="https://atupertu.svoltastudenti.it/assets/cdn/logo/{{ post.sku }}.png" alt="Logo {{ post.title }}">
             <article>
                 <h1 data-animtarget="{{ post.sku }}">{{ post.title }}</h1>
                 <h2 data-animtarget="{{ post.sku }}">{{ post.slogan }}</h2>
                 <h3 data-animtarget="{{ post.sku }}">{{ post.type }}</h3>
                 <p data-animtarget="{{ post.sku }}">{{ post.description }}</p>
             </article>
-            <video controls data-laxy="poster" data-laxy-poster="https://atupertu.svoltastudenti.it/assets/cdn/cover/{{ post.sku }}.webp"
+            <video controls data-laxy="poster" data-laxyposter="https://atupertu.svoltastudenti.it/assets/cdn/cover/{{ post.sku }}.webp"
                 data-id="{{ post.sku }}">
-                <source data-laxy="src" data-laxy-src="https://cdn.svoltastudenti.it/atuxtu/video/{{ post.sku }}.mp4" type="video/mp4">
+                <source data-laxy="src" data-laxysrc="https://cdn.svoltastudenti.it/atuxtu/video/{{ post.sku }}.mp4" type="video/mp4">
                 Your browser does not support HTML video.
             </video>
         </section>
@@ -462,9 +462,10 @@ layout: default
                             entry.target.querySelectorAll('*[data-laxy]')
                                 .forEach(item => {
                                     let key = item.dataset.laxy;
-                                    item.setAttribute(key, item.dataset[`laxy-${key}`]);
+                                    console.log(key);
+                                    item.setAttribute(key, item.dataset[`laxy${key}`]);
                                     delete item.dataset.laxy;
-                                    delete item.dataset[`laxy-${key}`];
+                                    delete item.dataset[`laxy${key}`];
                                 });
                         } else if (entry.intersectionRatio < 0.95) {
                             item.classList.remove('animActive');
