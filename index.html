@@ -311,7 +311,7 @@ layout: default
     </style>
     <!-- Cookies and analytics -->
     <script>
-        window.googleAnalyticsLoaded = false;
+        /*window.googleAnalyticsLoaded = false;
 
         function updateConsent(ad, stats) {
             gtag('consent', 'update', {
@@ -342,7 +342,7 @@ layout: default
             'ad_storage': 'denied',
             'analytics_storage': 'denied',
             'wait_for_update': 500
-        });
+        });*/
 
         var _iub = _iub || [];
 
@@ -356,7 +356,7 @@ layout: default
             "banner": {
                 "acceptButtonDisplay": true
             },
-            callback: {
+            /*callback: {
                 onReady: function () {
                     if (!consentUpdated) {
                         // Consent is needed and the user has not expressed his preference yet
@@ -381,7 +381,7 @@ layout: default
                         updateConsent(true, true);
                     }
                 }
-            }
+            }*/
         };
     </script>
     <script src="https://cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
@@ -451,9 +451,9 @@ layout: default
                             let newScreen = `associations/${entry.target.dataset.animid}`;
                             item.classList.add('animActive');
                             if (window.currentScreen !== newScreen) {
-                                gtag('event', 'screen_view', {
+                                /*gtag('event', 'screen_view', {
                                     'screen_name': newScreen
-                                });
+                                });*/
                             }
                             document.querySelectorAll('video').forEach(item => {
                                 item.pause();
@@ -476,16 +476,17 @@ layout: default
 
         function sendVideoTrigger(e, type) {
             e.target.dataset.id
-            gtag('event', 'view_item', {
+            /*gtag('event', 'view_item', {
                 event_label: `associations/${e.target.dataset.id}`,
                 event_category: `video_${type}`,
-            });
+            });*/
         }
         document.querySelectorAll('video').forEach(item => {
             item.addEventListener('play', e => sendVideoTrigger(e, 'play'))
             item.addEventListener('pause', e => sendVideoTrigger(e, 'pause'))
         });
     </script>
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d58ad2437d7f449da20f859f882184e4"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 
 </html>
