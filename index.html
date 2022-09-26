@@ -459,14 +459,8 @@ layout: default
                                 item.pause();
                             });
                             window.currentScreen = newScreen;
-                            entry.target.querySelectorAll('*[data-laxy]')
-                                .forEach(item => {
-                                    let key = item.dataset.laxy;
-                                    console.log(key);
-                                    item.setAttribute(key, item.dataset[`laxy${key}`]);
-                                    delete item.dataset.laxy;
-                                    delete item.dataset[`laxy${key}`];
-                                });
+                            
+                            laxyload(entry.target);
                         } else if (entry.intersectionRatio < 0.95) {
                             item.classList.remove('animActive');
                         }
@@ -478,6 +472,16 @@ layout: default
             });
         }, options);
 
+        function laxyload(el){
+            el.querySelectorAll('*[data-laxy]')
+                                .forEach(item => {
+                                    let key = item.dataset.laxy;
+                                    // console.log(key);
+                                    item.setAttribute(key, item.dataset[`laxy${key}`]);
+                                    delete item.dataset.laxy;
+                                    delete item.dataset[`laxy${key}`];
+                                });
+        }
         document.querySelectorAll('.animTrigger').forEach(item => {
             observer.observe(item);
         })
@@ -493,6 +497,13 @@ layout: default
             item.addEventListener('play', e => sendVideoTrigger(e, 'play'))
             item.addEventListener('pause', e => sendVideoTrigger(e, 'pause'))
         });
+
+        document.addEventListener('DOMContentLoader', () => {
+            setTimeout(() => {
+                document.querySelectorAll('section').forEach(laxyload);
+                // laxyload();
+            }, 1000);
+        })
     </script>
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d58ad2437d7f449da20f859f882184e4"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
