@@ -455,12 +455,13 @@ layout: default
                                     'screen_name': newScreen
                                 });*/
                             }
-                            document.querySelectorAll('video').forEach(item => {
-                                item.pause();
-                            });
                             window.currentScreen = newScreen;
                             
                             laxyload(entry.target);
+                            document.querySelectorAll('video').forEach(item => {
+                                item.pause();
+                                item.load();
+                            });
                         } else if (entry.intersectionRatio < 0.95) {
                             item.classList.remove('animActive');
                         }
@@ -474,13 +475,13 @@ layout: default
 
         function laxyload(el){
             el.querySelectorAll('*[data-laxy]')
-                                .forEach(item => {
-                                    let key = item.dataset.laxy;
-                                    // console.log(key);
-                                    item.setAttribute(key, item.dataset[`laxy${key}`]);
-                                    delete item.dataset.laxy;
-                                    delete item.dataset[`laxy${key}`];
-                                });
+                .forEach(item => {
+                    let key = item.dataset.laxy;
+                    // console.log(key);
+                    item.setAttribute(key, item.dataset[`laxy${key}`]);
+                    delete item.dataset.laxy;
+                    delete item.dataset[`laxy${key}`];
+                });
         }
         document.querySelectorAll('.animTrigger').forEach(item => {
             observer.observe(item);
@@ -498,7 +499,7 @@ layout: default
             item.addEventListener('pause', e => sendVideoTrigger(e, 'pause'))
         });
 
-        document.addEventListener('DOMContentLoader', () => {
+        document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 document.querySelectorAll('section').forEach(laxyload);
                 // laxyload();
