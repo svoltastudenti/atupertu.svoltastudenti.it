@@ -462,9 +462,9 @@ layout: default
                             entry.target.querySelectorAll('*[data-laxy]')
                                 .forEach(item => {
                                     let key = item.dataset.laxy;
-                                    item.setAttribute(key, item.dataset[`laxy-${item.dataset.laxy}`]);
+                                    item.setAttribute(key, item.dataset[`laxy-${key}`]);
                                     delete item.dataset.laxy;
-                                   delete item.dataset[`laxy-${item.dataset.laxy}`];
+                                    delete item.dataset[`laxy-${key}`];
                                 });
                         } else if (entry.intersectionRatio < 0.95) {
                             item.classList.remove('animActive');
