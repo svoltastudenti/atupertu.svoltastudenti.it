@@ -306,10 +306,6 @@ layout: default
                 left: 22vw;
                 top: 45vh;
             }
-            #iniziativa {
-                position: absolute;
-                left: 50%;
-            }
 
         }
     </style>
@@ -410,8 +406,8 @@ layout: default
         <img src="/assets/img/sfondo.webp" id="sfondo">
         {% for post in list %}
         <section id="{{ post.sku }}" class="animTrigger" data-animId="{{ post.sku }}">
-            <div id = "iniziativa" >Iniziativa realizzata con il contributo del Politecnico di Milano</div>
-            <!--commento debug-->
+            <!--<div id = "iniziativa" >Iniziativa realizzata con il contributo del Politecnico di Milano</div>
+            commento debug-->
             <!--<img class="logo" data-animtarget="{{ post.sku }}"
                 src="https://cdn.svoltastudenti.it/atuxtu/logo/{{ post.sku }}.png" alt="Logo {{ post.title }}">-->
             
