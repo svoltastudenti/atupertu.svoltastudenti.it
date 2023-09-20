@@ -9,6 +9,5 @@ description: SIT-Social Innovation Teams è l’associazione che opera nel campo
 published: true
 date: 2020-10-04T16:27:59.587Z
 order: 19
-cover: /assets/img/uploads/copertina-1.png
+cover: 
 ---
-useless
