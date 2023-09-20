@@ -5,13 +5,10 @@ title: SIT Polimi
 sku: sit
 slogan: Social Innovation Teams
 type: Community e vita associativa
-description: >-
-  Siamo un associazione studentesca del Politecnco di Milano, che opera nel
-  campo dell' Innovazione Sociale e dello Sviluppo Sostenibile.\
-
-  Siamo attivi all'interno dell'università come al di fuori, con il sostegno a diverse organizzazioni e startups che operano nel campo dell'Innovazione Sociale.\
-
-  Tra gli scopi principali, quelli della sensibilizzazione e del sostegno a imprenditori e progetti di innovazione sociale.
+description: SIT-Social Innovation Teams è l’associazione che opera nel campo dell'Innovazione Sociale e Sviluppo Sostenibile.
+Siamo attivi dentro l'università come fuori: divulghiamo i valori dell’innovazione Sociale in Ateneo,
+con eventi, workshop e sui social; diamo poi la possibilità agli studenti di affacciarsi al mondo imprenditoriale,
+partecipando a progetti innovativi e sostenendo startup ad impatto sociale, facendo network e sviluppando soft skills.
 published: true
 date: 2020-10-04T16:27:59.587Z
 order: 19
