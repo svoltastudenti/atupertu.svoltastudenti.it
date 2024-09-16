@@ -1,30 +1,30 @@
-<nav>
+<nav class="breadcrumb-container">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
     <li class="breadcrumb-item">Che associazione sei?</li>
   </ol>
 </nav>
 
-<div class="text-center mb-4">
+<div class="text-center mb-5">
   <img
     src="assets/img/tu_logo.png"
     alt="ATuXTu Logo"
-    class="img-fluid w-25 m-2"
+    class="img-fluid w-25 mt-3 mb-4"
   />
 </div>
 
 <!-- Domanda: Quale corso frequenti? -->
-<div class="card mb-3">
+<div class="card shadow-sm mb-4">
   <div class="card-body text-center">
-    <h5 class="card-title">Quale corso frequenti?</h5>
-    <div class="btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-outline-primary m-2">
+    <h5 class="card-title mb-4">Quale corso frequenti?</h5>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-outline-primary btn-lg mx-2">
         <input type="radio" name="corso" value="architettura" /> Architettura
       </label>
-      <label class="btn btn-outline-primary m-2">
+      <label class="btn btn-outline-primary btn-lg mx-2">
         <input type="radio" name="corso" value="design" /> Design
       </label>
-      <label class="btn btn-outline-primary m-2">
+      <label class="btn btn-outline-primary btn-lg mx-2">
         <input type="radio" name="corso" value="ingegneria" /> Ingegneria
       </label>
     </div>
@@ -32,10 +32,10 @@
 </div>
 
 <!-- Domanda: Quale superpotere vorresti avere? -->
-<div class="card mb-3">
+<div class="card shadow-sm mb-4">
   <div class="card-body text-center">
-    <h5 class="card-title">Quale superpotere vorresti avere?</h5>
-    <select class="form-select" aria-label="Superpotere">
+    <h5 class="card-title mb-4">Quale superpotere vorresti avere?</h5>
+    <select class="form-select form-select-lg" aria-label="Superpotere">
       <option selected disabled>Seleziona un'opzione</option>
       <option value="velocita">Velocità</option>
       <option value="invisibilita">Invisibilità</option>
@@ -45,10 +45,10 @@
 </div>
 
 <!-- Domanda: Se si rompe qualcosa -->
-<div class="card mb-3">
+<div class="card shadow-sm mb-4">
   <div class="card-body text-center">
-    <h5 class="card-title">Se si rompe qualcosa:</h5>
-    <select class="form-select" aria-label="Riparazione">
+    <h5 class="card-title mb-4">Se si rompe qualcosa:</h5>
+    <select class="form-select form-select-lg" aria-label="Riparazione">
       <option selected disabled>Seleziona un'opzione</option>
       <option value="riparo">Lo sistemo</option>
       <option value="chiamo_amico">Chiamo un amico</option>
@@ -57,100 +57,11 @@
   </div>
 </div>
 
-<!-- Domanda: Il tuo rapporto coi computer -->
-<div class="card mb-3">
-  <div class="card-body text-center">
-    <h5 class="card-title">Il tuo rapporto coi computer:</h5>
-    <select class="form-select" aria-label="Computer">
-      <option selected disabled>Seleziona un'opzione</option>
-      <option value="esperto">Esperto</option>
-      <option value="buono">Buono</option>
-      <option value="base">Base</option>
-    </select>
-  </div>
-</div>
-
-<!-- Domanda: Quanto sei finance? -->
-<div class="card mb-3">
-  <div class="card-body text-center">
-    <h5 class="card-title">Quanto sei finance?</h5>
-    <select class="form-select" aria-label="Finance">
-      <option selected disabled>Seleziona un'opzione</option>
-      <option value="esperto">Esperto</option>
-      <option value="intermedio">Intermedio</option>
-      <option value="principiante">Principiante</option>
-    </select>
-  </div>
-</div>
-
-<!-- Domanda: In che campus studi? -->
-<div class="card mb-3">
-  <div class="card-body text-center">
-    <h5 class="card-title">In che campus studi?</h5>
-    <select class="form-select" aria-label="Campus">
-      <option selected disabled>Seleziona un'opzione</option>
-      <option value="leonardo">Leonardo</option>
-      <option value="bovisa">Bovisa</option>
-      <option value="piacenza">Piacenza</option>
-    </select>
-  </div>
-</div>
-
-<!-- Domanda: Hobby/passioni -->
-<div class="card mb-3">
-  <div class="card-body text-center">
-    <h5 class="card-title">Hobby/passioni</h5>
-    <select class="form-select" aria-label="Hobby" multiple>
-      <option value="sport">Sport</option>
-      <option value="musica">Musica</option>
-      <option value="viaggi">Viaggi</option>
-      <option value="lettura">Lettura</option>
-    </select>
-  </div>
-</div>
-
 <!-- Scopri le tue associazioni -->
-<div class="card mb-3">
+<div class="card shadow-sm mb-4">
   <div class="card-body text-center">
-    <a href="#" class="btn btn-primary" onclick="scopriAssociazioni()"
-      >Scopri le tue associazioni!</a
-    >
+    <button class="btn btn-primary btn-lg" onclick="scopriAssociazioni()">
+      Scopri le tue associazioni!
+    </button>
   </div>
 </div>
-
-<script>
-  function scopriAssociazioni() {
-    // Ottieni le risposte
-    const corso = document.querySelector('input[name="corso"]:checked').value;
-    const superpotere = document.querySelector(
-      'select[aria-label="Superpotere"]'
-    ).value;
-    const riparazione = document.querySelector(
-      'select[aria-label="Riparazione"]'
-    ).value;
-    const computer = document.querySelector(
-      'select[aria-label="Computer"]'
-    ).value;
-    const finance = document.querySelector(
-      'select[aria-label="Finance"]'
-    ).value;
-    const campus = document.querySelector('select[aria-label="Campus"]').value;
-    const hobby = Array.from(
-      document.querySelectorAll('select[aria-label="Hobby"] option:checked')
-    ).map((el) => el.value);
-
-    // Logica per selezionare le associazioni suggerite
-    console.log("Risposte raccolte:", {
-      corso,
-      superpotere,
-      riparazione,
-      computer,
-      finance,
-      campus,
-      hobby,
-    });
-
-    // Logica per visualizzare le associazioni suggerite
-    // Potresti fare chiamate a un file JSON o API per recuperare e suggerire associazioni
-  }
-</script>
