@@ -23,11 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         categoryLink.setAttribute("data-bs-target", `#${categoryName}-nav`);
 
         categoryLink.innerHTML = `
-    <a
-            class="nav-link"
-            href="#"
-            onclick="loadContent('${categoryName}.html')"
-          ><i class="bi bi-folder"></i><span><u>${categoryName}</u></span></a><i class="bi bi-chevron-down ms-auto"></i>
+<i class="bi bi-folder"></i><span><u>${categoryName}</u></span><i class="bi bi-chevron-down ms-auto"></i>
   `;
         categoryItem.appendChild(categoryLink);
 
@@ -114,9 +110,14 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
                     ${
                       article.website
-                        ? `<li class="mb-2"><i class="bi bi-globe me-2"></i><strong>Sito Web:</strong> <a href="${article.website}">${article.website}</a></li>`
+                        ? `<li class="mb-2"><i class="bi bi-globe me-2"></i><strong>Sito Web:</strong> <a href="https://${article.website}">${article.website}</a></li>`
                         : ""
                     }
+                     ${
+                       article.instagram
+                         ? `<li class="mb-2"><i class="bi bi-globe me-2"></i><strong>Instagram:</strong> <a href="https://${article.instagram}">${article.title}</a></li>`
+                         : ""
+                     }
                   </ul>
                 </div>
               </div>
