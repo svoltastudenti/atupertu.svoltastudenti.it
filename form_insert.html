@@ -1,0 +1,165 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <h2>Aggiungi Nuovo Elemento</h2>
+        </div>
+        <div class="card-body">
+          <form id="newItemForm">
+            <div class="form-group mb-3">
+              <label for="title">Titolo</label>
+              <input
+                type="text"
+                class="form-control"
+                id="title"
+                placeholder="Inserisci il titolo"
+              />
+            </div>
+            <div class="form-group mb-3">
+              <label for="subtitle">Sottotitolo</label>
+              <input
+                type="text"
+                class="form-control"
+                id="subtitle"
+                placeholder="Inserisci il sottotitolo"
+              />
+            </div>
+            <div class="form-group mb-3">
+              <label for="category">Categoria</label>
+              <select class="form-control" id="category">
+                <option>Lista</option>
+                <option>Associazione</option>
+                <option>Gruppo</option>
+              </select>
+            </div>
+            <div class="form-group mb-3">
+              <label for="content">Contenuto</label>
+              <textarea
+                class="form-control"
+                id="content"
+                rows="3"
+                maxlength="600"
+                placeholder="Max 600 caratteri"
+              ></textarea>
+            </div>
+            <div class="form-group mb-3">
+              <label for="logo">Logo (PNG o SVG)</label>
+              <input
+                type="file"
+                class="form-control"
+                id="logo"
+                accept=".png,.svg"
+              />
+            </div>
+            <div class="form-group mb-3">
+              <label for="squareImage">Immagine Quadrata (rapporto 1:1)</label>
+              <input
+                type="file"
+                class="form-control"
+                id="squareImage"
+                accept="image/*"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Aggiungi Elemento
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Script per gestire l'invio del modulo e il salvataggio dei dati in JSON -->
+<script>
+  document
+    .getElementById("newItemForm")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      // Recupera i dati del modulo
+      const title = document.getElementById("title").value;
+      const subtitle = document.getElementById("subtitle").value;
+      const category = document.getElementById("category").value;
+      const content = document.getElementById("content").value;
+      const logoFile = document.getElementById("logo").files[0];
+      const squareImageFile = document.getElementById("squareImage").files[0];
+
+      // Controlla che tutti i campi siano compilati
+      if (!title || !subtitle || !category || !content) {
+        alert("Per favore, compila tutti i campi obbligatori.");
+        return;
+      }
+
+      // Verifica che il logo sia un PNG o SVG
+      if (
+        logoFile &&
+        !logoFile.name.endsWith(".png") &&
+        !logoFile.name.endsWith(".svg")
+      ) {
+        alert("Il logo deve essere un file PNG o SVG.");
+        return;
+      }
+
+      function submitForm() {
+        // Recupera i dati dal localStorage
+        let sidebarData = JSON.parse(localStorage.getItem("sidebar")) || {
+          categories: { Lista: [], Associazione: [], Gruppo: [] },
+        };
+
+        // Controlla se esiste già un elemento con lo stesso titolo nella categoria selezionata
+        const existingItemIndex = sidebarData.categories[category].findIndex(
+          (item) => item.title === title
+        );
+
+        if (existingItemIndex > -1) {
+          // Se esiste, chiedi conferma per sovrascrivere
+          if (
+            confirm(
+              "Esiste già un elemento con questo titolo. Vuoi sovrascrivere?"
+            )
+          ) {
+            sidebarData.categories[category][existingItemIndex] = {
+              title: title,
+              subtitle: subtitle,
+              text: content,
+              image: squareImageFile ? squareImageFile.name : "",
+              logo: logoFile ? logoFile.name : "",
+            };
+            localStorage.setItem("sidebar", JSON.stringify(sidebarData));
+            alert("Elemento aggiornato con successo!");
+          }
+        } else {
+          // Se non esiste, aggiungi il nuovo elemento
+          sidebarData.categories[category].push({
+            title: title,
+            subtitle: subtitle,
+            text: content,
+            image: squareImageFile ? squareImageFile.name : "",
+            logo: logoFile ? logoFile.name : "",
+          });
+          localStorage.setItem("sidebar", JSON.stringify(sidebarData));
+          alert("Elemento aggiunto con successo!");
+        }
+
+        // Resetta il modulo
+        document.getElementById("newItemForm").reset();
+      }
+
+      // Se il file dell'immagine quadrata è stato selezionato, valida l'aspect ratio
+      if (squareImageFile) {
+        const img = new Image();
+        img.src = URL.createObjectURL(squareImageFile);
+        img.onload = function () {
+          if (img.width !== img.height) {
+            alert("L'immagine quadrata deve avere un rapporto di 1:1.");
+            return;
+          }
+          submitForm();
+        };
+      } else {
+        submitForm();
+      }
+    });
+</script>

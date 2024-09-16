@@ -1,0 +1,213 @@
+{
+  "categories": {
+    "Liste": [
+      {
+        "title": "Svoltastudenti",
+        "subtitle": "Beyond Lessons",
+        "text": "Svoltastudenti è la prima lista che è riuscita a far convivere due realtà così diverse tra loro: la rappresentanza e l’associazione. Costituita da studenti ha lo scopo di offrire corsi, sport, viaggi, favorire la mobilità inter universitaria e garantire la qualità dell'offerta formativa attraverso la rappresentanza. È anche la prima associazione studentesca italiana a rispecchiare il modello anglosassone delle Students' Union, del tutto svincolata dal partitismo politico.",
+        "image": "svolta.jpg",
+        "logo": "svolta.png"
+      },
+      {
+        "title": "La Terna Sinistrorsa",
+        "subtitle": "Il sistema di riferimento del Politecnico",
+        "text": "Siamo la Terna Sinistrorsa, siamo una lista di rappresentanza al Politecnico di Milano che crede nell’inclusività, nella partecipazione attiva dei singoli e delle singole alla vita dell’Ateneo di cui facciamo parte e che porta avanti l’idea che la vita dellз studentз non sia fatta di solo studio, esami e nozioni ma che debba concedersi dei momenti ricreativi oltre che di divertimento, satura di spunti culturali.",
+        "image": "terna.jpg",
+        "logo": "Terna.png"
+      },
+      {
+        "title": "Lista Aperta",
+        "subtitle": "Per il diritto allo studio",
+        "text": "Siamo studenti che vivono l'Università, qui vogliamo goderci questi anni fondamentali vivendoli da protagonisti! Per questo ci candidiamo alle elezioni universitarie per lavorare su diritto allo studio e didattica. Portiamo un modo di fare rappresentanza che lavori cercando di costruire qualcosa di positivo in dialogo con le altre liste e con l’Istituzione: per noi il punto di vista dell’altro è un arricchimento, va compreso prima che criticato.",
+        "image": "lista.jpg",
+        "logo": "Lista.png"
+      },
+      {
+        "title": "Studenti Indipendenti",
+        "subtitle": "Per una rappresentanza come mezzo e non come fine",
+        "text": "Studenti Indipendenti è una lista di rappresentanza indipendente da partiti, privati e lobby che vede la rappresentanza come un mezzo per migliorare davvero la vita degli studenti difendendone e ampliandone i diritti e non come una riga in più da aggiungere al curriculum. Per noi l'università deve essere pubblica, laica, accessibile a tuttз e inclusiva di tutte le soggettività.",
+        "image": "Indipendenti.jpg",
+        "logo": "Sip.png"
+      }
+    ],
+    "Associazioni": [
+      {
+        "title": "ASM PoliMi",
+        "subtitle": "Your path to success through faith and knowledge",
+        "text": "Siamo l'unica associazione studentesca pensata da studenti musulmani nel panorama italiano. Siamo nati da pochissimo, fine 2017, e super entusiasti di farci conoscere! Crediamo in un'università in cui poter esprimere valori come solidarietà, tolleranza, cultura, conoscenza e rispetto reciproco divertendoci insieme, coltivando anche la nostra spiritualità. Se credi in questi valori non puoi non essere dei nostri ! Abbiamo bisogno della tua grinta per crescere",
+        "image": "ASM.jpg",
+        "logo": "ASM.png"
+      },
+      {
+        "title": "Alpine",
+        "subtitle": "Sottotitolo del secondo articolo",
+        "text": "Questo è il testo del secondo articolo.",
+        "image": "terna.jpg",
+        "logo": "Terna.png"
+      },
+      {
+        "title": "Automation Engineering Association",
+        "subtitle": "Eat sleep control & repeat!",
+        "text": "QAEA, Automation Engineering Association, è la associazione di Automazione e Robotica del Politecnico di Milano. Costruita da studenti per gli studenti, se ti unisci a noi potrai seguire masterclass di esperti, costruire un forte network di persone che condividono obiettivi comuni, visitare aziende di automazione, lavorare su progetti, partecipare a competizioni internazionali e comprendere meglio le tue future possibilità di carriera.",
+        "image": "aea.jpg",
+        "logo": "AEA.png"
+      },
+      {
+        "title": "BEA Polimi",
+        "subtitle": "From students to students",
+        "text": "BEA nasce dagli studenti per gli studenti nel giugno del 2017. Vogliamo rappresentare un punto di informazione per tutti gli studenti di Ingegneria Biomedica del Polimi per migliorare la loro esperienza universitaria, sia a livello accademico che sociale. Nei nostri progetti rientra offrire un database di esperienze degli studenti e fare da tramite con l’università per offrire opportunità formative anche al di fuori delle lezioni.",
+        "image": "BEA.jpg",
+        "logo": "BEA.png"
+      },
+      {
+        "title": "ESN Polimi",
+        "subtitle": "Students helping students",
+        "text": "ESN Politecnico Milano is a non-profit, apolitical association of students founded in 1992. Its aim is to support international mobility and study exchange programs, supplying information and any kind of help that can be voluntarily given by its members. It also provides opportunities for cultural understanding, traveling, entertainment and self-development under the principle of Students Helping Students.Erasmus Student Network Politecnico Milano is a non-profit and apolitical student association founded in 1992. Its purpose is to support international exchange programs, organizing activities and events that favor integration and inter-cultural exchange.",
+        "image": "ESN.jpg",
+        "logo": "ESN.png"
+      },
+      {
+        "title": "Enactus PoliMi",
+        "subtitle": "Be the change",
+        "text": "Enactus è un network di studenti, accademici e aziende che coinvolgendo 36 paesi si pone l’obiettivo di sviluppare l’imprenditorialità della futura generazione di leader per creare un migliore futuro sostenibile. Con il progetto SheaMatters proponiamo una nuova forma di sviluppo sostenibile grazie ad un ponte commerciale con il Ghana, mentre il progetto Oyster2Life mira al riutilizzo dei gusci di ostrica per la ricostruzione dell’ecosistema marino.",
+        "image": "enactus.jpg",
+        "logo": "enactus.png"
+      },
+      {
+        "title": "Entrepreneurship Club Polimi",
+        "subtitle": "Learn Network Build",
+        "text": "We bring together future and established entrepreneurs who strive to make an impact. Our work focuses on providing our ecosystem with opportunities for connection and ideas contamination. In doing so, we strongly believe that expanding and nurturing our network is key to the well-being of our mission.",
+        "image": "Eclub.jpg",
+        "logo": "Eclub.png"
+      },
+      {
+        "title": "FLyMi",
+        "subtitle": "\"Only those who dare may fly\"",
+        "text": "Fly Mi è la nuova associazione studentesca di stampo aeronautico nata con lo scopo di progettare e costruire modelli di aerei in scala a pilotaggio remoto. Fly Mi nasce per essere un punto di riferimento per ogni studente del Politecnico di Milano appassionato di aeronautica e di aviazione e non solo. Stay tuned per conoscere ogni possibilità che Fly Mi potrebbe darti.",
+        "image": "FlyMi.jpg",
+        "logo": "FlyMi.png"
+      },
+      {
+        "title": "Jemp",
+        "subtitle": "Junior Enterprise Milano Politecnico",
+        "text": "Questo è quello che siamo! JEMP è la Junior Enterprise del Politecnico di Milano, un’associazione di studenti carichi e pronti a rispondere in modo innovativo e costruttivo alle nuove necessità del mondo del lavoro, con passione e dedizione. La nostra associazione no-profit ha l’obiettivo di colmare il divario tra università e mondo del lavoro, offrendo servizi di consulenza a start-up, PMI e aziende internazionali.",
+        "image": "jemp.jpg",
+        "logo": "jemp.png"
+      },
+      {
+        "title": "Mesa",
+        "subtitle": "Share the Knowledge",
+        "text": "MESA (Milan Engineering Student Association) is an association of Politecnico di Milano founded in 2016 gathering students from all Engineering fields and all ages, from freshmen to alumni. We are the local branch of a European association called EESTEC that currently counts around 57 member universities in 27 countries. Being a part of this network, members of MESA can participate in week-long international workshops all over Europe free of cost, meet and network with students from other excellent technical universities and enrich your CV with unique and inspiring experiences.",
+        "image": "MESA.jpg",
+        "logo": "MESA.png"
+      },
+      {
+        "title": "POuL - Politecnico Open unix Labs",
+        "subtitle": "Come hack with us",
+        "text": "Siamo un'associazione ed una community di hacker. Organizziamo corsi, conferenze, talks e workshop su hacking, GNU/Linux, programmazione e progetti liberi e open source.",
+        "image": "POuL.jpg",
+        "logo": "POuL.png"
+      },
+      {
+        "title": "Poli.Radio",
+        "subtitle": "Not AM not FM",
+        "text": "Web radio ufficiale degli studenti del Politecnico di Milano.",
+        "image": "poliradio.jpg",
+        "logo": "POLIRADIO.png"
+      },
+      {
+        "title": "PoliSpace",
+        "subtitle": "Sottotitolo del secondo articolo",
+        "text": "PoliSpace is a student organization completely space-related. Among its objectives: offer students hands-on experience on space engineering projects, help them building their network in the aerospace sector, and spread the aerospace culture. Some of its active projects include the development of a satellite, of a tool to train astronauts retrieving samples on the Moon, and of a suite of sensors to validate the payload bay of a space launcher.",
+        "image": "PoliSpace.jpg",
+        "logo": "PoliSpace.png"
+      },
+      {
+        "title": "Poliedro",
+        "subtitle": "Studentз LGBTI+ del Politecnico di Milano",
+        "text": "PoliEdro si batte per creare un ambiente più inclusivo e si fonda sul rispetto e la valorizzazione di ogni persona. Cerchiamo attivamente di fornire sostegno a chi si sente discriminatə all'interno dell’ambiente universitario, sensibilizzare sulle tematiche legate a sessualità e identità di genere, e creare connessioni grazie ad eventi ricreativi, come aperitivi e pomeriggi sportivi.",
+        "image": "poliedro.jpg",
+        "logo": "poliedro.png"
+      },
+      {
+        "title": "Polifonia",
+        "subtitle": "We can’t wait to share our passion for music with you.",
+        "text": "Polifonia nasce dall'esigenza di un’identità musicale, artistica e creativa all'interno del Politecnico, dopo aver sentito tante storie di ragazzi costretti a dover abbandonare il proprio strumento a causa dell'intenso carico di studi da fronteggiare. L’obiettivo è consentire agli studenti di esprimersi in tutti i modi possibili attraverso band, ensemble acustico, cori e artisti singoli, fornendo loro uno spazio e degli eventi dove esibirsi.",
+        "image": "polifonia.jpg",
+        "logo": "polifonia.png"
+      },
+      {
+        "title": "Polimi Data Scientists",
+        "subtitle": "The Data Science Association of Polimi",
+        "text": "\"Polimi Data Scientists\" was born with the aim of creating a community of students, professionals and enthusiasts in the field of Data Science at Politecnico di Milano. The aim is to provide a meeting point between the university and workplaces, creating a mutual understanding between students and data science realities. To achieve this, we periodically organize themed events aimed at the community, and workshops on the most advanced data science technologies.",
+        "image": "PolimiDS.jpg",
+        "logo": "PolimiDS.png"
+      },
+      {
+        "title": "Resilient Gap",
+        "subtitle": "Glocal Action Project",
+        "text": "Resilient GAP è l’associazione del Politecnico che si occupa di tematiche ambientali. Crediamo in un futuro più sostenibile e nel fatto che ciascuno di noi possa fare la differenza. Con questo obiettivo, organizziamo eventi di informazione e azione pratica, dalla pulizia del parco, ai bollettini sul clima, dal gioco per bambini, alla conferenza con gli esperti. Se anche a te stanno a cuore sostenibilità ed equità sociale, vieni a conoscerci!",
+        "image": "Resilient.jpg",
+        "logo": "Resilient.png"
+      },
+      {
+        "title": "SIT Polimi",
+        "subtitle": "Social Innovation Teams",
+        "text": "SIT-Social Innovation Teams è l’associazione che opera nel campo dell'Innovazione Sociale e Sviluppo Sostenibile. Siamo attivi dentro l'università come fuori, divulghiamo i valori dell’innovazione Sociale in Ateneo, con eventi, workshop e sui social; diamo poi la possibilità agli studenti di affacciarsi al mondo imprenditoriale, partecipando a progetti innovativi e sostenendo startup ad impatto sociale, facendo network e sviluppando soft skills.",
+        "image": "SIT.jpg",
+        "logo": "SIT.png"
+      },
+      {
+        "title": "Scacchi Polimi",
+        "subtitle": "Sottotitolo del secondo articolo",
+        "text": "Questo è il testo del secondo articolo.",
+        "image": "scacchi.jpg",
+        "logo": "Scacchi.png"
+      },
+      {
+        "title": "Skiward",
+        "subtitle": "Sottotitolo del secondo articolo",
+        "text": "Questo è il testo del secondo articolo.",
+        "image": "Skyward.jpg",
+        "logo": "Skyward.png"
+      },
+      {
+        "title": "Starting Finance Club PoliMi",
+        "subtitle": "Learning Finance, Sharing Experience",
+        "text": "Starting Finance Club PoliMi è un luogo di incontro per ragazzi e ragazze con la passione per la finanza e l'economia dove vengono organizzati eventi a tema ed attività pratiche per sviluppare nuove competenze ed ampliare il network di conoscenze all'interno dell'università. L'associazione fa parte di una rete di club distribuita sul territorio nazionale e gestita da Starting Finance, la più grande community finanziaria per millennials in Italia.",
+        "image": "StartingFinance.jpg",
+        "logo": "StartingFinance.png"
+      },
+      {
+        "title": "Teatro delle biglie",
+        "subtitle": "\"Il cinema vi renderà famosi, la televisione vi renderà ricchi, ma il teatro vi farà bene.\" - Terrence Mann",
+        "text": "Il Teatro delle Biglie è un’associazione senza scopo di lucro. La sua missione è aiutare gli studenti del Politecnico di Milano a sviluppare la consapevolezza nei propri mezzi espressivi. Il mezzo con cui l’associazione cerca di compiere la sua missione è l’organizzazione di attività culturali.",
+        "image": "TdB.jpg",
+        "logo": "TdB.png"
+      }
+    ],
+    "Gruppi": [
+      {
+        "title": "POLIMOVIES",
+        "subtitle": "Sottotitolo del secondo articolo",
+        "text": "Questo è il testo del secondo articolo.",
+        "image": "POLIMOVIES.jpg",
+        "logo": "POLIMOVIES.png"
+      },
+      {
+        "title": "Pluto",
+        "subtitle": "Sottotitolo del secondo articolo",
+        "text": "Questo è il testo del secondo articolo.",
+        "image": "article2.jpg",
+        "logo": "logo2.png"
+      },
+      {
+        "title": "Polinetwork",
+        "subtitle": "Sottotitolo del secondo articolo",
+        "text": "Questo è il testo del secondo articolo.",
+        "image": "scacchi.jpg",
+        "logo": "scacchi.png"
+      }
+    ]
+  }
+}
