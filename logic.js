@@ -10,39 +10,36 @@ function calculateUserScores(responses) {
     Coscienziosita: 0,
     Apertura: 0,
   };
-  const count = {
-    Onesta: 0,
-    Emotivita: 0,
-    Estroversione: 0,
-    Amicalita: 0,
-    Coscienziosita: 0,
-    Apertura: 0,
-  };
+  
+  const count = { ...scores };
 
+  // Calcola punteggi e conteggi
   responses.forEach((response, index) => {
-    if (!questions[index]) {
+    const question = questions[index];
+    if (!question) {
       console.error("No question data available at index:", index);
       return;
     }
-    const questionTrait = questions[index].trait;
+    
+    const questionTrait = question.trait;
     let increment = response;
 
-    // Invert score if the question is reverse scored
-    if (questions[index].reverse) {
+    // Inverti il punteggio se la domanda è invertita
+    if (question.reverse) {
       increment = 6 - increment;
     }
 
-    // Incrementing the score for the specific trait
+    // Incrementa il punteggio per il tratto specifico
     scores[questionTrait] += increment;
     count[questionTrait] += 1;
   });
 
-  // Normalize scores by the number of questions per trait
+  // Normalizza i punteggi in base al numero di domande per tratto
   Object.keys(scores).forEach((trait) => {
     if (count[trait] > 0) {
-      scores[trait] = scores[trait] / count[trait];
+      scores[trait] /= count[trait];
     }
-    console.log(`Normalized score for ${trait}: ${scores[trait].toFixed(2)}`);
+    console.log(`Punteggio normalizzato per ${trait}: ${scores[trait].toFixed(2)}`);
   });
 
   return scores;
@@ -51,7 +48,7 @@ function calculateUserScores(responses) {
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+    [array[i], array[j]] = [array[j], array[i]]; // Scambia gli elementi
   }
 }
 
@@ -66,11 +63,15 @@ function findBestMatch(userScores) {
     p.traits.forEach((trait) => {
       let score = userScores[trait.name] || 0;
 
-      // Invert score if trait is not positive
-      if (!trait.positive) score = 6 - score;
+      // Inverti il punteggio se il tratto non è positivo
+      if (!trait.positive) {
+        score = 6 - score;
+      }
 
       compatibilityScore += score * trait.weight;
     });
+
+    console.log(`Compatibilità con ${p.name}: ${compatibilityScore.toFixed(2)}`);
 
     if (compatibilityScore > highestScore) {
       highestScore = compatibilityScore;
@@ -80,12 +81,13 @@ function findBestMatch(userScores) {
     }
   });
 
-  // Ensure diversity in selection if possible
+  // Garantisci diversità nella selezione
   if (topMatches.length > 10) {
     shuffleArray(topMatches);
     topMatches = topMatches.slice(0, 10);
   }
 
+  // Ritorna un abbinamento casuale dai migliori
   return topMatches[Math.floor(Math.random() * topMatches.length)];
 }
 
