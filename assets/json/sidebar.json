@@ -285,20 +285,7 @@
       }
     ],
     "Gruppi": [
-      {
-        "title": "Analog",
-        "subtitle": "Sottotitolo del secondo articolo",
-        "text": "Questo è il testo del secondo articolo.",
-        "image": "Analog.jpg",
-        "logo": "Analog.png"
-      },
-      {
-        "title": "Polinetwork",
-        "subtitle": "Sottotitolo del secondo articolo",
-        "text": "Questo è il testo del secondo articolo.",
-        "image": "Polinetwork.jpg",
-        "logo": "Polinetwork.png"
-      }
+      
     ]
   }
 }
