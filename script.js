@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const pokemonName = document.getElementById("pokemon-name");
     const pokemonImage = document.getElementById("pokemon-image");
     const pokemonResultDiv = document.getElementById("pokemon-result");
-    const shareButton = document.getElementById("share-button");
+    
 
     pokemonName.textContent = pokemon.name;
     pokemonImage.src = pokemon.img;
@@ -234,11 +234,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     pokemonResultDiv.style.display = "block";
     pokemonResultDiv.classList.add("fade-in");
-    shareButton.style.display = "block";
-
-    shareButton.onclick = function () {
-      window.open(shareButton.href, "_blank");
-    };
+      
   }
 
   advanceDialogue();
