@@ -331,12 +331,7 @@ const pokemon = [
         name: "Amicalita",
         weight: 0.5,
         positive: true,
-      },
-      {
-        name: "Emotivita",
-        weight: 0.4,
-        positive: false,
-      },
+      }
     ],
   },
   {
