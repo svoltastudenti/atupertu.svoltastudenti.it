@@ -127,11 +127,6 @@ const pokemon = [
         weight: 0.7,
         positive: true,
       },
-      {
-        name: "Emotivita",
-        weight: 0.6,
-        positive: true,
-      },
     ],
   },
   {
@@ -162,16 +157,11 @@ const pokemon = [
   {
     id: 8,
     num: "008",
-    title: "Entrepreneurship Club Polimi",
+    title: "Entrepreneurship Club",
     subtitle: "Learn Network Build",
     img: "../assets/img/EClub.png",
     type: ["Apertura", "Estroversione"],
     traits: [
-      {
-        name: "Apertura",
-        weight: 0.8,
-        positive: true,
-      },
       {
         name: "Estroversione",
         weight: 0.7,
