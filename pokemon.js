@@ -2,7 +2,7 @@ const pokemon = [
   {
     id: 1,
     num: "001",
-    title: "ASM PoliMi",
+    title: "ASM",
     subtitle: "Your path to success through faith and knowledge",
     img: "../assets/img/ASM.png",
     type: ["Onesta", "Amicalita"],
@@ -72,7 +72,7 @@ const pokemon = [
   {
     id: 4,
     num: "004",
-    title: "BEA Polimi",
+    title: "BEA ",
     subtitle: "From students to students",
     img: "../assets/img/BEA.png",
     type: ["Amicalita"],
@@ -112,7 +112,7 @@ const pokemon = [
   {
     id: 6,
     num: "006",
-    title: "ESN Polimi",
+    title: "ESN ",
     subtitle: "Students helping students",
     img: "../assets/img/ESN.png",
     type: ["Amicalita", "Estroversione"],
@@ -132,7 +132,7 @@ const pokemon = [
   {
     id: 7,
     num: "007",
-    title: "Enactus PoliMi",
+    title: "Enactus ",
     subtitle: "Be the change",
     img: "../assets/img/Enactus.png",
     type: ["Apertura", "Onesta"],
@@ -272,9 +272,9 @@ const pokemon = [
   {
     id: 13,
     num: "013",
-    title: "Passion Lab Polimi",
+    title: "Passion Lab ",
     subtitle: "Subtitle",
-    img: "../assets/img/LabPolimi.png",
+    img: "../assets/img/Lab.png",
     type: ["Estroversione", "Amicalita"],
     traits: [
       {
@@ -417,9 +417,9 @@ const pokemon = [
   {
     id: 19,
     num: "019",
-    title: "Polimi Data Scientists",
-    subtitle: "The Data Science Association of Polimi",
-    img: "../assets/img/PolimiDS.png",
+    title: " Data Scientists",
+    subtitle: "The Data Science Association of ",
+    img: "../assets/img/DS.png",
     type: ["Apertura", "Coscienziosita"],
     traits: [
       {
@@ -492,7 +492,7 @@ const pokemon = [
   {
     id: 22,
     num: "022",
-    title: "SIT Polimi",
+    title: "SIT ",
     subtitle: "Social Innovation Teams",
     img: "../assets/img/SIT.png",
     type: ["Amicalita", "Apertura"],
@@ -517,7 +517,7 @@ const pokemon = [
   {
     id: 23,
     num: "023",
-    title: "Scacchi Polimi",
+    title: "Scacchi ",
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     img: "../assets/img/Scacchi.png",
     type: ["Emotivita", "Coscienziosita"],
@@ -567,7 +567,7 @@ const pokemon = [
   {
     id: 25,
     num: "025",
-    title: "Starting Finance Club PoliMi",
+    title: "Starting Finance Club ",
     subtitle: "Learning Finance, Sharing Experience",
     img: "../assets/img/StartingFinance.png",
     type: ["Estroversione", "Coscienziosita"],
