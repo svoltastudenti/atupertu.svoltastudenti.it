@@ -5,20 +5,20 @@ const pokemon = [
     title: "ASM PoliMi",
     subtitle: "Your path to success through faith and knowledge",
     img: "../assets/img/ASM.png",
-    type: ["Honesty-Humility", "Agreeableness"],
+    type: ["Onesta", "Amicalita"],
     traits: [
       {
-        name: "Honesty-Humility",
+        name: "Onesta",
         weight: 0.7,
         positive: true,
       },
       {
-        name: "Agreeableness",
+        name: "Amicalita",
         weight: 0.8,
         positive: true,
       },
       {
-        name: "Conscientiousness",
+        name: "Coscienziosita",
         weight: 0.5,
         positive: true,
       },
@@ -30,15 +30,15 @@ const pokemon = [
     title: "Alpine",
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     img: "../assets/img/alpine.png",
-    type: ["Flexibility", "Agreeableness"],
+    type: ["Emotivita", "Amicalita"],
     traits: [
       {
-        name: "Flexibility",
+        name: "Emotivita",
         weight: 0.5,
         positive: true,
       },
       {
-        name: "Openness to Experience",
+        name: "Apertura",
         weight: 0.6,
         positive: true,
       },
@@ -50,20 +50,20 @@ const pokemon = [
     title: "Automation Engineering Association",
     subtitle: "Eat sleep control & repeat!",
     img: "../assets/img/AEA.png",
-    type: ["Openness", "Conscientiousness"],
+    type: ["Apertura", "Coscienziosita"],
     traits: [
       {
-        name: "Openness to Experience",
+        name: "Apertura",
         weight: 0.6,
         positive: true,
       },
       {
-        name: "Conscientiousness",
+        name: "Coscienziosita",
         weight: 0.7,
         positive: true,
       },
       {
-        name: "Extraversion",
+        name: "Estroversione",
         weight: 0.5,
         positive: true,
       },
@@ -75,15 +75,15 @@ const pokemon = [
     title: "BEA Polimi",
     subtitle: "From students to students",
     img: "../assets/img/BEA.png",
-    type: ["Agreeableness"],
+    type: ["Amicalita"],
     traits: [
       {
-        name: "Agreeableness",
+        name: "Amicalita",
         weight: 0.9,
         positive: true,
       },
       {
-        name: "Conscientiousness",
+        name: "Coscienziosita",
         weight: 0.6,
         positive: true,
       },
@@ -95,15 +95,15 @@ const pokemon = [
     title: "B.E.S.T.",
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     img: "../assets/img/BEST.png",
-    type: ["Conscientiousness"],
+    type: ["Coscienziosita"],
     traits: [
       {
-        name: "Conscientiousness",
+        name: "Coscienziosita",
         weight: 0.5,
         positive: true,
       },
       {
-        name: "Extraversion",
+        name: "Estroversione",
         weight: 0.4,
         positive: false,
       },
@@ -115,20 +115,20 @@ const pokemon = [
     title: "ESN Polimi",
     subtitle: "Students helping students",
     img: "../assets/img/ESN.png",
-    type: ["Agreeableness", "Extraversion"],
+    type: ["Amicalita", "Estroversione"],
     traits: [
       {
-        name: "Agreeableness",
+        name: "Amicalita",
         weight: 0.8,
         positive: true,
       },
       {
-        name: "Extraversion",
+        name: "Estroversione",
         weight: 0.7,
         positive: true,
       },
       {
-        name: "Flexibility",
+        name: "Emotivita",
         weight: 0.6,
         positive: true,
       },
@@ -140,20 +140,20 @@ const pokemon = [
     title: "Enactus PoliMi",
     subtitle: "Be the change",
     img: "../assets/img/Enactus.png",
-    type: ["Openness", "Honesty-Humility"],
+    type: ["Apertura", "Onesta"],
     traits: [
       {
-        name: "Openness to Experience",
+        name: "Apertura",
         weight: 0.9,
         positive: true,
       },
       {
-        name: "Honesty-Humility",
+        name: "Onesta",
         weight: 0.6,
         positive: true,
       },
       {
-        name: "Agreeableness",
+        name: "Amicalita",
         weight: 0.5,
         positive: true,
       },
@@ -165,20 +165,20 @@ const pokemon = [
     title: "Entrepreneurship Club Polimi",
     subtitle: "Learn Network Build",
     img: "../assets/img/EClub.png",
-    type: ["Openness", "Extraversion"],
+    type: ["Apertura", "Estroversione"],
     traits: [
       {
-        name: "Openness to Experience",
+        name: "Apertura",
         weight: 0.8,
         positive: true,
       },
       {
-        name: "Extraversion",
+        name: "Estroversione",
         weight: 0.7,
         positive: true,
       },
       {
-        name: "Conscientiousness",
+        name: "Coscienziosita",
         weight: 0.5,
         positive: true,
       },
@@ -190,15 +190,15 @@ const pokemon = [
     title: "FLy-Mi",
     subtitle: '"Only those who dare may fly"',
     img: "../assets/img/FlyMi.png",
-    type: ["Extraversion"],
+    type: ["Estroversione"],
     traits: [
       {
-        name: "Extraversion",
+        name: "Estroversione",
         weight: 0.9,
         positive: true,
       },
       {
-        name: "Openness to Experience",
+        name: "Apertura",
         weight: 0.6,
         positive: true,
       },
@@ -210,20 +210,20 @@ const pokemon = [
     title: "Jemp",
     subtitle: "Junior Enterprise Milano Politecnico",
     img: "../assets/img/Jemp.png",
-    type: ["Conscientiousness", "Honesty-Humility"],
+    type: ["Coscienziosita", "Onesta"],
     traits: [
       {
-        name: "Conscientiousness",
+        name: "Coscienziosita",
         weight: 0.8,
         positive: true,
       },
       {
-        name: "Honesty-Humility",
+        name: "Onesta",
         weight: 0.7,
         positive: true,
       },
       {
-        name: "Extraversion",
+        name: "Estroversione",
         weight: 0.5,
         positive: true,
       },
@@ -235,20 +235,20 @@ const pokemon = [
     title: "MESA",
     subtitle: "Share the Knowledge",
     img: "../assets/img/MESA.png",
-    type: ["Openness", "Agreeableness"],
+    type: ["Apertura", "Amicalita"],
     traits: [
       {
-        name: "Openness to Experience",
+        name: "Apertura",
         weight: 0.7,
         positive: true,
       },
       {
-        name: "Agreeableness",
+        name: "Amicalita",
         weight: 0.6,
         positive: true,
       },
       {
-        name: "Conscientiousness",
+        name: "Coscienziosita",
         weight: 0.5,
         positive: false,
       },
@@ -260,20 +260,20 @@ const pokemon = [
     title: "NINE",
     subtitle: "The small world of great things",
     img: "../assets/img/NINE.png",
-    type: ["Openness", "Agreeableness"],
+    type: ["Apertura", "Amicalita"],
     traits: [
       {
-        name: "Openness to Experience",
+        name: "Apertura",
         weight: 0.8,
         positive: true,
       },
       {
-        name: "Agreeableness",
+        name: "Amicalita",
         weight: 0.6,
         positive: true,
       },
       {
-        name: "Flexibility",
+        name: "Emotivita",
         weight: 0.5,
         positive: true,
       },
@@ -285,20 +285,20 @@ const pokemon = [
     title: "Passion Lab Polimi",
     subtitle: "Subtitle",
     img: "../assets/img/LabPolimi.png",
-    type: ["Extraversion", "Agreeableness"],
+    type: ["Estroversione", "Amicalita"],
     traits: [
       {
-        name: "Extraversion",
+        name: "Estroversione",
         weight: 0.6,
         positive: true,
       },
       {
-        name: "Agreeableness",
+        name: "Amicalita",
         weight: 0.7,
         positive: true,
       },
       {
-        name: "Openness to Experience",
+        name: "Apertura",
         weight: 0.5,
         positive: true,
       },
@@ -310,15 +310,15 @@ const pokemon = [
     title: "POuL - Politecnico Open unix Labs",
     subtitle: "Come hack with us",
     img: "../assets/img/POuL.png",
-    type: ["Openness"],
+    type: ["Apertura"],
     traits: [
       {
-        name: "Openness to Experience",
+        name: "Apertura",
         weight: 0.9,
         positive: true,
       },
       {
-        name: "Conscientiousness",
+        name: "Coscienziosita",
         weight: 0.6,
         positive: true,
       },
@@ -330,20 +330,20 @@ const pokemon = [
     title: "POLI.RADIO",
     subtitle: "Not AM not FM",
     img: "../assets/img/POLIRADIO.png",
-    type: ["Extraversion", "Agreeableness"],
+    type: ["Estroversione", "Amicalita"],
     traits: [
       {
-        name: "Extraversion",
+        name: "Estroversione",
         weight: 0.7,
         positive: true,
       },
       {
-        name: "Agreeableness",
+        name: "Amicalita",
         weight: 0.5,
         positive: true,
       },
       {
-        name: "Flexibility",
+        name: "Emotivita",
         weight: 0.4,
         positive: false,
       },
@@ -355,20 +355,20 @@ const pokemon = [
     title: "PoliSpace",
     subtitle: "Alatis Garve Nihil",
     img: "../assets/img/PoliSpace.png",
-    type: ["Conscientiousness", "Openness"],
+    type: ["Coscienziosita", "Apertura"],
     traits: [
       {
-        name: "Conscientiousness",
+        name: "Coscienziosita",
         weight: 0.8,
         positive: true,
       },
       {
-        name: "Openness to Experience",
+        name: "Apertura",
         weight: 0.7,
         positive: true,
       },
       {
-        name: "Extraversion",
+        name: "Estroversione",
         weight: 0.5,
         positive: true,
       },
@@ -380,20 +380,20 @@ const pokemon = [
     title: "Poliedro",
     subtitle: "Studentз LGBTI+ del Politecnico di Milano",
     img: "../assets/img/Poliedro.png",
-    type: ["Agreeableness", "Openness"],
+    type: ["Amicalita", "Apertura"],
     traits: [
       {
-        name: "Agreeableness",
+        name: "Amicalita",
         weight: 0.8,
         positive: true,
       },
       {
-        name: "Openness to Experience",
+        name: "Apertura",
         weight: 0.6,
         positive: true,
       },
       {
-        name: "Conscientiousness",
+        name: "Coscienziosita",
         weight: 0.4,
         positive: false,
       },
@@ -405,20 +405,20 @@ const pokemon = [
     title: "Polifonia",
     subtitle: "We can’t wait to share our passion for music with you.",
     img: "../assets/img/Polifonia.png",
-    type: ["Extraversion", "Agreeableness"],
+    type: ["Estroversione", "Amicalita"],
     traits: [
       {
-        name: "Extraversion",
+        name: "Estroversione",
         weight: 0.7,
         positive: true,
       },
       {
-        name: "Agreeableness",
+        name: "Amicalita",
         weight: 0.7,
         positive: true,
       },
       {
-        name: "Openness to Experience",
+        name: "Apertura",
         weight: 0.5,
         positive: true,
       },
@@ -430,20 +430,20 @@ const pokemon = [
     title: "Polimi Data Scientists",
     subtitle: "The Data Science Association of Polimi",
     img: "../assets/img/PolimiDS.png",
-    type: ["Openness", "Conscientiousness"],
+    type: ["Apertura", "Coscienziosita"],
     traits: [
       {
-        name: "Openness to Experience",
+        name: "Apertura",
         weight: 0.9,
         positive: true,
       },
       {
-        name: "Conscientiousness",
+        name: "Coscienziosita",
         weight: 0.6,
         positive: true,
       },
       {
-        name: "Extraversion",
+        name: "Estroversione",
         weight: 0.4,
         positive: false,
       },
@@ -455,20 +455,20 @@ const pokemon = [
     title: "POLI.MOVIES",
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     img: "../assets/img/POLIMOVIES.png",
-    type: ["Extraversion", "Openness"],
+    type: ["Estroversione", "Apertura"],
     traits: [
       {
-        name: "Extraversion",
+        name: "Estroversione",
         weight: 0.6,
         positive: true,
       },
       {
-        name: "Openness to Experience",
+        name: "Apertura",
         weight: 0.7,
         positive: true,
       },
       {
-        name: "Agreeableness",
+        name: "Amicalita",
         weight: 0.5,
         positive: true,
       },
@@ -480,20 +480,20 @@ const pokemon = [
     title: "Resilient G.A.P.",
     subtitle: "Glocal Action Project",
     img: "../assets/img/Resilient.png",
-    type: ["Agreeableness", "Conscientiousness"],
+    type: ["Amicalita", "Coscienziosita"],
     traits: [
       {
-        name: "Agreeableness",
+        name: "Amicalita",
         weight: 0.8,
         positive: true,
       },
       {
-        name: "Conscientiousness",
+        name: "Coscienziosita",
         weight: 0.7,
         positive: true,
       },
       {
-        name: "Openness to Experience",
+        name: "Apertura",
         weight: 0.4,
         positive: false,
       },
@@ -505,20 +505,20 @@ const pokemon = [
     title: "SIT Polimi",
     subtitle: "Social Innovation Teams",
     img: "../assets/img/SIT.png",
-    type: ["Agreeableness", "Openness"],
+    type: ["Amicalita", "Apertura"],
     traits: [
       {
-        name: "Agreeableness",
+        name: "Amicalita",
         weight: 0.7,
         positive: true,
       },
       {
-        name: "Openness to Experience",
+        name: "Apertura",
         weight: 0.6,
         positive: true,
       },
       {
-        name: "Extraversion",
+        name: "Estroversione",
         weight: 0.5,
         positive: false,
       },
@@ -530,20 +530,20 @@ const pokemon = [
     title: "Scacchi Polimi",
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     img: "../assets/img/Scacchi.png",
-    type: ["Flexibility", "Conscientiousness"],
+    type: ["Emotivita", "Coscienziosita"],
     traits: [
       {
-        name: "Flexibility",
+        name: "Emotivita",
         weight: 0.5,
         positive: true,
       },
       {
-        name: "Conscientiousness",
+        name: "Coscienziosita",
         weight: 0.5,
         positive: true,
       },
       {
-        name: "Openness to Experience",
+        name: "Apertura",
         weight: 0.4,
         positive: false,
       },
@@ -555,20 +555,20 @@ const pokemon = [
     title: "Skyward",
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     img: "../assets/img/Skyward.png",
-    type: ["Openness", "Extraversion"],
+    type: ["Apertura", "Estroversione"],
     traits: [
       {
-        name: "Openness to Experience",
+        name: "Apertura",
         weight: 0.7,
         positive: true,
       },
       {
-        name: "Extraversion",
+        name: "Estroversione",
         weight: 0.5,
         positive: true,
       },
       {
-        name: "Agreeableness",
+        name: "Amicalita",
         weight: 0.4,
         positive: false,
       },
@@ -580,20 +580,20 @@ const pokemon = [
     title: "Starting Finance Club PoliMi",
     subtitle: "Learning Finance, Sharing Experience",
     img: "../assets/img/StartingFinance.png",
-    type: ["Extraversion", "Conscientiousness"],
+    type: ["Estroversione", "Coscienziosita"],
     traits: [
       {
-        name: "Extraversion",
+        name: "Estroversione",
         weight: 0.6,
         positive: true,
       },
       {
-        name: "Conscientiousness",
+        name: "Coscienziosita",
         weight: 0.7,
         positive: true,
       },
       {
-        name: "Agreeableness",
+        name: "Amicalita",
         weight: 0.5,
         positive: true,
       },
@@ -606,20 +606,20 @@ const pokemon = [
     subtitle:
       '"Il cinema vi renderà famosi, la televisione vi renderà ricchi, ma il teatro vi farà bene." - Terrence Mann',
     img: "../assets/img/TdB.png",
-    type: ["Flexibility", "Openness"],
+    type: ["Emotivita", "Apertura"],
     traits: [
       {
-        name: "Flexibility",
+        name: "Emotivita",
         weight: 0.6,
         positive: true,
       },
       {
-        name: "Openness to Experience",
+        name: "Apertura",
         weight: 0.7,
         positive: true,
       },
       {
-        name: "Agreeableness",
+        name: "Amicalita",
         weight: 0.5,
         positive: true,
       },
@@ -631,20 +631,20 @@ const pokemon = [
     title: "WoShou",
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     img: "../assets/img/WoShou.png",
-    type: ["Extraversion", "Agreeableness"],
+    type: ["Estroversione", "Amicalita"],
     traits: [
       {
-        name: "Extraversion",
+        name: "Estroversione",
         weight: 0.7,
         positive: true,
       },
       {
-        name: "Agreeableness",
+        name: "Amicalita",
         weight: 0.6,
         positive: true,
       },
       {
-        name: "Honesty-Humility",
+        name: "Onesta",
         weight: 0.5,
         positive: true,
       },
