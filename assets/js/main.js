@@ -1,33 +1,26 @@
-/**
-* Template Name: NiceAdmin
-* Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-* Updated: Apr 20 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 document.addEventListener('DOMContentLoaded', () => {
   const sidebar = document.getElementById('sidebar');
   const overlay = document.getElementById('overlay');
   const toggleSidebarBtn = document.querySelector('.toggle-sidebar-btn');
 
-  // Funzione per aprire la sidebar
+  // Funzione per aprire la sidebar su mobile
   const openSidebar = () => {
     if (window.innerWidth <= 992) { // Solo su mobile
-      sidebar.classList.add('active');
+      document.body.classList.add('toggle-sidebar');
       overlay.style.display = 'block';
     }
   };
 
   // Funzione per chiudere la sidebar
   const closeSidebar = () => {
-    sidebar.classList.remove('active');
+    document.body.classList.remove('toggle-sidebar');
     overlay.style.display = 'none';
   };
 
   // Aggiungi evento per il pulsante hamburger
   toggleSidebarBtn.addEventListener('click', (e) => {
     e.stopPropagation(); // Evita chiusura immediata
-    if (sidebar.classList.contains('active')) {
+    if (document.body.classList.contains('toggle-sidebar')) {
       closeSidebar();
     } else {
       openSidebar();
@@ -44,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
 
 
 (function() {
