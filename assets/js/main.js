@@ -5,6 +5,43 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+document.addEventListener('DOMContentLoaded', () => {
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('overlay');
+  const toggleSidebarBtn = document.querySelector('.toggle-sidebar-btn');
+
+  // Funzione per aprire la sidebar
+  const openSidebar = () => {
+    sidebar.classList.add('active');
+    overlay.style.display = 'block';
+  };
+
+  // Funzione per chiudere la sidebar
+  const closeSidebar = () => {
+    sidebar.classList.remove('active');
+    overlay.style.display = 'none';
+  };
+
+  // Aggiungi evento per il pulsante hamburger
+  toggleSidebarBtn.addEventListener('click', (e) => {
+    e.stopPropagation(); // Impedisce che il click sul pulsante chiuda subito la sidebar
+    if (sidebar.classList.contains('active')) {
+      closeSidebar();
+    } else {
+      openSidebar();
+    }
+  });
+
+  // Chiudi la sidebar se si clicca all'esterno di essa (sull'overlay)
+  overlay.addEventListener('click', closeSidebar);
+
+  // Chiudi la sidebar se si clicca su un'area fuori della sidebar
+  document.addEventListener('click', (event) => {
+    if (!sidebar.contains(event.target) && !toggleSidebarBtn.contains(event.target)) {
+      closeSidebar();
+    }
+  });
+});
 
 (function() {
   "use strict";
