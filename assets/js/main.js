@@ -12,8 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Funzione per aprire la sidebar
   const openSidebar = () => {
-    sidebar.classList.add('active');
-    overlay.style.display = 'block';
+    if (window.innerWidth <= 992) { // Solo su mobile
+      sidebar.classList.add('active');
+      overlay.style.display = 'block';
+    }
   };
 
   // Funzione per chiudere la sidebar
@@ -24,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Aggiungi evento per il pulsante hamburger
   toggleSidebarBtn.addEventListener('click', (e) => {
-    e.stopPropagation(); // Impedisce che il click sul pulsante chiuda subito la sidebar
+    e.stopPropagation(); // Evita chiusura immediata
     if (sidebar.classList.contains('active')) {
       closeSidebar();
     } else {
@@ -32,16 +34,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Chiudi la sidebar se si clicca all'esterno di essa (sull'overlay)
+  // Chiudi la sidebar se si clicca sull'overlay
   overlay.addEventListener('click', closeSidebar);
 
-  // Chiudi la sidebar se si clicca su un'area fuori della sidebar
+  // Chiudi la sidebar se si clicca fuori dalla sidebar su mobile
   document.addEventListener('click', (event) => {
-    if (!sidebar.contains(event.target) && !toggleSidebarBtn.contains(event.target)) {
+    if (window.innerWidth <= 992 && !sidebar.contains(event.target) && !toggleSidebarBtn.contains(event.target)) {
       closeSidebar();
     }
   });
 });
+
 
 (function() {
   "use strict";
