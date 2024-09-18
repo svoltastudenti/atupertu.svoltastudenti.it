@@ -22,10 +22,22 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Un leggero sfondo semi-trasparente */
-  display: none; /* Inizialmente nascosto */
+  background: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente */
+  display: none; /* Nascondi l'overlay di default */
   z-index: 999; /* Dietro la sidebar */
 }
+
+/* Solo su dispositivi mobili */
+@media (max-width: 992px) {
+  #overlay {
+    display: none; /* Inizialmente nascosto, verrà attivato con JS */
+  }
+
+  .sidebar.active + #overlay {
+    display: block; /* Mostra l'overlay quando la sidebar è attiva */
+  }
+}
+
 
 
 .card {
