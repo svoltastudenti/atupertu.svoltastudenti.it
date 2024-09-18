@@ -12,10 +12,11 @@
 :root {
   scroll-behavior: smooth;
 }
-/* Aggiungi questo CSS al tuo file di stile */
+
 .container {
   margin-top: 50px;
 }
+
 #overlay {
   position: fixed;
   top: 0;
@@ -23,20 +24,24 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente */
-  display: none; /* Nascondi l'overlay di default */
-  z-index: 999; /* Dietro la sidebar */
+  z-index: 9999; /* Imposta z-index alto per stare sopra tutti gli elementi */
+  display: none; /* Nascondi di default */
+  pointer-events: none; /* Disabilita eventi quando nascosto */
 }
 
 /* Solo su dispositivi mobili */
 @media (max-width: 992px) {
   #overlay {
-    display: none; /* Inizialmente nascosto, verrà attivato con JS */
+    display: block; /* Rendi visibile l'overlay */
+    pointer-events: auto; /* Abilita clic quando visibile */
   }
 
-  .sidebar.active + #overlay {
-    display: block; /* Mostra l'overlay quando la sidebar è attiva */
+  /* Sidebar attiva su mobile */
+  body.toggle-sidebar #overlay {
+    display: none; /* Mostra l'overlay quando la sidebar è attiva */
   }
 }
+
 
 
 
