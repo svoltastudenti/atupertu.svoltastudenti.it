@@ -204,7 +204,7 @@ const pokemon = [
     traits: [
       {
         name: "Coscienziosita",
-        weight: 0.8,
+        weight: 0.5,
         positive: true,
       },
       {
