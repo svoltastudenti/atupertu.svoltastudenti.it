@@ -17,24 +17,6 @@
   margin-top: 50px;
 }
 
-#overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente */
-  z-index: 9999; /* Imposta z-index alto per stare sopra tutti gli elementi */
-  display: none; /* Nascondi di default */
-  pointer-events: none; /* Disabilita eventi quando nascosto */
-}
-
-/* Solo su dispositivi mobili */
-@media (max-width: 992px) {
-  #overlay {
-    display: block; /* Rendi visibile l'overlay */
-    pointer-events: auto; /* Abilita clic quando visibile */
-  }
 
   /* Sidebar attiva su mobile */
   body.toggle-sidebar #overlay {
